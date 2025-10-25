@@ -35,10 +35,7 @@
             font-size: 1rem; /* 16px */
             line-height: 1.5rem;
         }
-        .font-size-sm .resizable-quiz-question {
-             font-size: 1.125rem; /* 18px */
-             line-height: 1.75rem;
-        }
+
         @media (min-width: 768px) {
             .font-size-sm .resizable-text {
                 font-size: 1rem; /* 16px */
@@ -56,10 +53,7 @@
             font-size: 1.125rem; /* 18px */
             line-height: 1.75rem;
         }
-        .font-size-md .resizable-quiz-question {
-             font-size: 1.25rem; /* 20px */
-             line-height: 1.75rem;
-        }
+ 
         @media (min-width: 768px) {
             .font-size-md .resizable-text {
                 font-size: 1.125rem; /* 18px */
@@ -76,10 +70,7 @@
             font-size: 1.25rem; /* 20px */
             line-height: 1.75rem;
         }
-        .font-size-lg .resizable-quiz-question {
-             font-size: 1.5rem; /* 24px */
-             line-height: 2rem;
-        }
+ 
         @media (min-width: 768px) {
             .font-size-lg .resizable-text {
                 font-size: 1.25rem; /* 20px */
@@ -117,7 +108,14 @@
         <!-- Header -->
         <header class="p-8 md:p-12 bg-white border-b border-gray-200">
             <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">LNG7162 Midterm Study Guide</h1>
-            <p class="text-lg md:text-xl text-gray-700 resizable-header-p">
+            
+            <!-- Link to Exercises -->
+            <a href="https://m2ndl.github.io/EXERCISES_BILING_MID/" target="_blank" class="inline-flex items-center space-x-2 text-lg text-cyan-600 hover:text-cyan-800 hover:underline mb-4">
+                <span>Go to Interactive Exercises Page</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+            
+            <p class="text-lg md:text-xl text-gray-700 resizable-header-p mt-2">
                 This guide combines your Lecture Keys and Weekly Summaries PDF. Content from the Rod Ellis (2nd ed.) and Gass, Behney, & Plonsky (4th ed.) textbooks has been integrated for additional detail. Week 4 is expanded using Baker & Wright (6th ed.).
             </p>
             
@@ -142,92 +140,105 @@
                     </svg>
                 </button>
                 <div id="week-1-content" class="accordion-content bg-gray-800 text-gray-200">
-                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-slate-500">
-                        <h3 class="text-xl md:text-2xl font-bold mb-5 text-slate-300">1. Key Concepts Covered</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Second Language Acquisition (SLA):</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Core Definition:</strong> The systematic process of learning languages beyond the mother tongue (L1).</li>
-                                    <li><strong class="font-medium">Distinctions (from Gass et al., 2013, p. 4-5):</strong>
-                                        <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
-                                            <li><strong class="font-normal">Second Language (L2):</strong> Learning a nonnative language in the environment where it is spoken (e.g., learning English in the US). Provides significant input.</li>
-                                            <li><strong class="font-normal">Foreign Language (FL):</strong> Learning a nonnative language in the environment of one's native language (e.g., learning English in France). Input limited to classroom.</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong class="font-medium">Acquisition vs. Learning:</strong> (See Krashen, below). 'Acquisition' = subconscious "picking up." 'Learning' = conscious "knowing about" rules. 'SLA' is often used as a general term for both.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Bilingualism:</strong> The use of two or more languages in daily life. Competence ranges from minimal to native-like.
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Gass et al. (2013, p. 479) note this is a continuum, from minimal knowledge to the "mythical bilingual" with perfect native-like control.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Multilingualism:</strong> The global norm of speaking more than two languages.</li>
-                            <li><strong class="font-semibold text-white">Types of Bilingualism:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Simultaneous vs. Sequential (or Successive):</strong> Learning two languages from birth vs. learning an L2 after the L1 is established (Gass et al., 2013, p. 481).</li>
-                                    <li><strong class="font-medium">Compound vs. Coordinate:</strong> Older distinction. Fused conceptual system (Compound) vs. separate systems (Coordinate). Current research (e.g., Cook's "multicompetence") suggests complex, interconnected systems in one mind.</li>
-                                    <li><strong class="font-medium">Additive vs. Subtractive:</strong> Learning an L2 while maintaining L1 (Additive) vs. L2 replacing/weakening L1 due to social pressure (Subtractive) (Gass et al., 2013, p. 481, Table 15.1).</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-slate-500 space-y-8">
+                        
+                        <!-- Key Concepts Box -->
+                        <div class="bg-slate-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-slate-300">1. Key Concepts Covered</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Second Language Acquisition (SLA):</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-slate-300">Core Definition:</strong> The systematic process of learning languages beyond the mother tongue (L1).</li>
+                                        <li><strong class="font-medium text-slate-300">Distinctions (from Gass et al., 2013, p. 4-5):</strong>
+                                            <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
+                                                <li><strong class="font-normal">Second Language (L2):</strong> Learning a nonnative language in the environment where it is spoken (e.g., learning English in the US). Provides significant input.</li>
+                                                <li><strong class="font-normal">Foreign Language (FL):</strong> Learning a nonnative language in the environment of one's native language (e.g., learning English in France). Input limited to classroom.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong class="font-medium text-slate-300">Acquisition vs. Learning:</strong> (See Krashen, below). 'Acquisition' = subconscious "picking up." 'Learning' = conscious "knowing about" rules. 'SLA' is often used as a general term for both.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Bilingualism:</strong> The use of two or more languages in daily life. Competence ranges from minimal to native-like.
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Gass et al. (2013, p. 479) note this is a continuum, from minimal knowledge to the "mythical bilingual" with perfect native-like control.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Multilingualism:</strong> The global norm of speaking more than two languages.</li>
+                                <li><strong class="font-semibold text-white">Types of Bilingualism:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-slate-300">Simultaneous vs. Sequential (or Successive):</strong> Learning two languages from birth vs. learning an L2 after the L1 is established (Gass et al., 2013, p. 481).</li>
+                                        <li><strong class="font-medium text-slate-300">Compound vs. Coordinate:</strong> Older distinction. Fused conceptual system (Compound) vs. separate systems (Coordinate). Current research (e.g., Cook's "multicompetence") suggests complex, interconnected systems in one mind.</li>
+                                        <li><strong class="font-medium text-slate-300">Additive vs. Subtractive:</strong> Learning an L2 while maintaining L1 (Additive) vs. L2 replacing/weakening L1 due to social pressure (Subtractive) (Gass et al., 2013, p. 481, Table 15.1).</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-slate-300">2. Historical Development & Key Theories</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Behaviorist Theory (1950s-1960s):</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Core Idea:</strong> Language learning is habit formation, shaped by imitation, practice, and reinforcement (Gass et al., 2013, p. 80-83).</li>
-                                    <li><strong class="font-medium">Role of L1:</strong> Habits transfer. Positive transfer (facilitation) if same; negative transfer (interference) if different. Interference seen as source of all errors.</li>
-                                    <li><strong class="font-medium">Associated Practice:</strong> Basis for Contrastive Analysis Hypothesis (CAH), which claimed L1/L2 comparison could predict all errors (Gass et al., 2013, p. 85).</li>
-                                    <li><strong class="font-medium">Key Figure:</strong> B.F. Skinner (Verbal Behavior, 1957).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Mentalist Theory (1960s-1970s):</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Core Idea:</strong> Rejection of Behaviorism. Learning is a creative, cognitive process. Humans have an innate Language Acquisition Device (LAD) and Universal Grammar (UG).</li>
-                                    <li><strong class="font-medium">Evidence:</strong> L1 acquisition studies (e.g., Berko, 1958; Brown, 1973) showed children make systematic errors (e.g., *comed*) not in adult input, proving rule creation, not imitation (Gass et al., 2013, p. 109).</li>
-                                    <li><strong class="font-medium">Key Figure:</strong> Noam Chomsky (1959 review of Skinner).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Interactionist Theory (1980s-present):</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Core Idea:</strong> Middle-ground. Accepts internal mental processes (Mentalism) but argues they are activated by social interaction.</li>
-                                    <li><strong class="font-medium">Key Concept:</strong> Negotiation of meaning (Gass et al., Ch. 12) during communication breakdowns is crucial for making input comprehensible and drawing attention to form.</li>
-                                    <li><strong class="font-medium">Key Figure (related):</strong> Stephen Krashen (Monitor Model relies on comprehensible input).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Usage-based Theory (1990s-present):</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Core Idea:</strong> Emergentist approach (Gass et al., 2013, p. 272-273). Rejects innate UG. Learners "extract regularities from the input."</li>
-                                    <li><strong class="font-medium">Mechanism:</strong> Learning based on frequency. Grammar "emerges" from a complex network of connections built from experience.</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <!-- Key Theories Box -->
+                        <div class="bg-slate-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-slate-300">2. Historical Development & Key Theories</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Behaviorist Theory (1950s-1960s):</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-slate-300">Core Idea:</strong> Language learning is habit formation, shaped by imitation, practice, and reinforcement (Gass et al., 2013, p. 80-83).</li>
+                                        <li><strong class="font-medium text-slate-300">Role of L1:</strong> Habits transfer. Positive transfer (facilitation) if same; negative transfer (interference) if different. Interference seen as source of all errors.</li>
+                                        <li><strong class="font-medium text-slate-300">Associated Practice:</strong> Basis for Contrastive Analysis Hypothesis (CAH), which claimed L1/L2 comparison could predict all errors (Gass et al., 2013, p. 85).</li>
+                                        <li><strong class="font-medium text-slate-300">Key Figure:</strong> B.F. Skinner (Verbal Behavior, 1957).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Mentalist Theory (1960s-1970s):</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-slate-300">Core Idea:</strong> Rejection of Behaviorism. Learning is a creative, cognitive process. Humans have an innate Language Acquisition Device (LAD) and Universal Grammar (UG).</li>
+                                        <li><strong class="font-medium text-slate-300">Evidence:</strong> L1 acquisition studies (e.g., Berko, 1958; Brown, 1973) showed children make systematic errors (e.g., *comed*) not in adult input, proving rule creation, not imitation (Gass et al., 2013, p. 109).</li>
+                                        <li><strong class="font-medium text-slate-300">Key Figure:</strong> Noam Chomsky (1959 review of Skinner).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Interactionist Theory (1980s-present):</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-slate-300">Core Idea:</strong> Middle-ground. Accepts internal mental processes (Mentalism) but argues they are activated by social interaction.</li>
+                                        <li><strong class="font-medium text-slate-300">Key Concept:</strong> Negotiation of meaning (Gass et al., Ch. 12) during communication breakdowns is crucial for making input comprehensible and drawing attention to form.</li>
+                                        <li><strong class="font-medium text-slate-300">Key Figure (related):</strong> Stephen Krashen (Monitor Model relies on comprehensible input).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Usage-based Theory (1990s-present):</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-slate-300">Core Idea:</strong> Emergentist approach (Gass et al., 2013, p. 272-273). Rejects innate UG. Learners "extract regularities from the input."</li>
+                                        <li><strong class="font-medium text-slate-300">Mechanism:</strong> Learning based on frequency. Grammar "emerges" from a complex network of connections built from experience.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-slate-300">3. Key Figures</h3>
-                         <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">B.F. Skinner:</strong> Leading proponent of Behaviorism (language as habit).</li>
-                            <li><strong class="font-semibold text-white">Noam Chomsky:</strong> Leading proponent of Mentalism (language as innate knowledge, UG).</li>
-                            <li><strong class="font-semibold text-white">François Grosjean:</strong> Key figure in bilingualism. Gass et al. (2013, p. 483) cite his work on "language mode," describing how bilinguals activate languages based on context (monolingual vs. bilingual mode), explaining code-switching.</li>
+                        <!-- Key Figures Box -->
+                        <div class="bg-slate-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-slate-300">3. Key Figures</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">B.F. Skinner:</strong> Leading proponent of Behaviorism (language as habit).</li>
+                                <li><strong class="font-semibold text-white">Noam Chomsky:</strong> Leading proponent of Mentalism (language as innate knowledge, UG).</li>
+                                <li><strong class="font-semibold text-white">François Grosjean:</strong> Key figure in bilingualism. Gass et al. (2013, p. 483) cite his work on "language mode," describing how bilinguals activate languages based on context (monolingual vs. bilingual mode), explaining code-switching.</li>
                                 <li><strong class="font-semibold text-white">Stephen Krashen:</strong> Proposed the influential <button data-modal-target="#modal-krashen" class="modal-trigger">Monitor Model</button>. Gass et al. (2013, p. 129-134) detail its five hypotheses:
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Acquisition-Learning Hypothesis:</strong> 'Acquisition' (subconscious) and 'learning' (conscious) are two independent systems.</li>
-                                    <li><strong class="font-medium">Monitor Hypothesis:</strong> The 'learned' system acts as an "inspector" or "Monitor" to edit the 'acquired' system's output (requires time, focus on form, rule knowledge).</li>
-                                    <li><strong class="font-medium">Natural Order Hypothesis:</strong> Grammatical morphemes are acquired in a predictable order, regardless of instruction.</li>
-                                    <li><strong class="font-medium">Input Hypothesis (i+1):</strong> Acquisition occurs via comprehensible input slightly beyond the current level ($i+1$).</li>
-                                    <li><strong class="font-medium">Affective Filter Hypothesis:</strong> Affective factors (anxiety, motivation) can "block" comprehensible input from reaching the LAD.</li>
-                                </ul>
-                            </li>
-                        </ul>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-slate-300">Acquisition-Learning Hypothesis:</strong> 'Acquisition' (subconscious) and 'learning' (conscious) are two independent systems.</li>
+                                        <li><strong class="font-medium text-slate-300">Monitor Hypothesis:</strong> The 'learned' system acts as an "inspector" or "Monitor" to edit the 'acquired' system's output (requires time, focus on form, rule knowledge).</li>
+                                        <li><strong class="font-medium text-slate-300">Natural Order Hypothesis:</strong> Grammatical morphemes are acquired in a predictable order, regardless of instruction.</li>
+                                        <li><strong class="font-medium text-slate-300">Input Hypothesis (i+1):</strong> Acquisition occurs via comprehensible input slightly beyond the current level ($i+1$).</li>
+                                        <li><strong class="font-medium text-slate-300">Affective Filter Hypothesis:</strong> Affective factors (anxiety, motivation) can "block" comprehensible input from reaching the LAD.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-slate-300">4. Required Resources</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
-                            <li>Saville-Troike, M., & Barto, K. (2016). Introducing Second Language Acquisition (3rd ed.).</li>
-                            <li>Grosjean, F. (2010). Bilingual Life and Reality.</li>
-                            <li>Chomsky, N. (1959). Review of Skinner's Verbal Behavior.</li>
-                            <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
-                            <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
-                        </ul>
+                        <!-- Required Resources Box -->
+                        <div class="bg-slate-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-slate-300">4. Required Resources</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
+                                <li>Saville-Troike, M., & Barto, K. (2016). Introducing Second Language Acquisition (3rd ed.).</li>
+                                <li>Grosjean, F. (2010). Bilingual Life and Reality.</li>
+                                <li>Chomsky, N. (1959). Review of Skinner's Verbal Behavior.</li>
+                                <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
+                                <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,89 +252,105 @@
                     </svg>
                 </button>
                 <div id="week-2-content" class="accordion-content bg-gray-800 text-gray-200">
-                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-indigo-500">
-                        <h3 class="text-xl md:text-2xl font-bold mb-5 text-indigo-300">1. Key Concepts Covered</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Cognitive Architecture:</strong> How L1 and L2 are represented (separate vs. shared).
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Gass et al. (2013) note this is complex, often viewed as a continuum (p. 482). They cite Cook's (2003) concept of <strong class="font-medium">multicompetence</strong>: L1/L2 knowledge in one mind is a different state from monolingualism, forming an interconnected system.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Executive Control:</strong> Higher-level cognitive processes (attention, inhibition, switching). Bilinguals often show advantages ('bilingual advantage').</li>
-                            <li><strong class="font-semibold text-white">Working Memory (WM):</strong> The system for temporarily holding and manipulating information.
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Gass et al. (2013, p. 267) define as "structures and processes that humans use to store and manipulate information."</li>
-                                    <li><strong class="font-medium">Baddeley's Model:</strong> Includes phonological loop (verbal info), visuospatial sketch pad (visual info), and central executive (attentional "supervisor") (Gass et al., 2013, p. 267).</li>
-                                    <li><strong class="font-medium">Phonological Short-Term Memory (PSTM):</strong> Linked to the phonological loop; research links it to successful L2 vocabulary and grammar learning (Gass et al., 2013, p. 269-270).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Metalinguistic Awareness:</strong> Ability to reflect on and manipulate language.
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Gass et al. (2013, p. 482) note bilingual children often show advantages, citing Bialystok's work on "superior abilities in judging grammatical accuracy" and better "separating out individual words from meaningful sentences" compared to monolinguals.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Neural Plasticity & Brain Organization:</strong> Brain's ability to change in response to L2 learning.
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Gass et al. (2013, p. 441) list "neurological changes" and "loss of plasticity" as a primary explanation for age-related differences.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Cognitive Reserve:</strong> Idea that bilingualism builds brain resilience, potentially delaying dementia.</li>
-                            <li><strong class="font-semibold text-white">Critical Period Hypothesis (CPH):</strong> (See Week 5) Theory that age affects language learning.
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Gass et al. (2013, p. 434) define as a "limited developmental period during which it is possible to acquire a language... to normal, native-like levels," often linked to puberty.</li>
-                                    <li><strong class="font-medium">Sensitive Period Hypothesis:</strong> A more gradual alternative; ability declines over time rather than stopping abruptly (p. 435).</li>
-                                    <li>Pronunciation is often affected first, then grammar.</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-indigo-500 space-y-8">
+                        
+                        <!-- Key Concepts Box -->
+                        <div class="bg-indigo-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-indigo-300">1. Key Concepts Covered</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Cognitive Architecture:</strong> How L1 and L2 are represented (separate vs. shared).
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Gass et al. (2013) note this is complex, often viewed as a continuum (p. 482). They cite Cook's (2003) concept of <strong class="font-medium text-indigo-300">multicompetence</strong>: L1/L2 knowledge in one mind is a different state from monolingualism, forming an interconnected system.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Executive Control:</strong> Higher-level cognitive processes (attention, inhibition, switching). Bilinguals often show advantages ('bilingual advantage').</li>
+                                <li><strong class="font-semibold text-white">Working Memory (WM):</strong> The system for temporarily holding and manipulating information.
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Gass et al. (2013, p. 267) define as "structures and processes that humans use to store and manipulate information."</li>
+                                        <li><strong class="font-medium text-indigo-300">Baddeley's Model:</strong> Includes phonological loop (verbal info), visuospatial sketch pad (visual info), and central executive (attentional "supervisor") (Gass et al., 2013, p. 267).</li>
+                                        <li><strong class="font-medium text-indigo-300">Phonological Short-Term Memory (PSTM):</strong> Linked to the phonological loop; research links it to successful L2 vocabulary and grammar learning (Gass et al., 2013, p. 269-270).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Metalinguistic Awareness:</strong> Ability to reflect on and manipulate language.
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Gass et al. (2013, p. 482) note bilingual children often show advantages, citing Bialystok's work on "superior abilities in judging grammatical accuracy" and better "separating out individual words from meaningful sentences" compared to monolinguals.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Neural Plasticity & Brain Organization:</strong> Brain's ability to change in response to L2 learning.
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Gass et al. (2013, p. 441) list "neurological changes" and "loss of plasticity" as a primary explanation for age-related differences.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Cognitive Reserve:</strong> Idea that bilingualism builds brain resilience, potentially delaying dementia.</li>
+                                <li><strong class="font-semibold text-white">Critical Period Hypothesis (CPH):</strong> (See Week 5) Theory that age affects language learning.
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Gass et al. (2013, p. 434) define as a "limited developmental period during which it is possible to acquire a language... to normal, native-like levels," often linked to puberty.</li>
+                                        <li><strong class="font-medium text-indigo-300">Sensitive Period Hypothesis:</strong> A more gradual alternative; ability declines over time rather than stopping abruptly (p. 435).</li>
+                                        <li>Pronunciation is often affected first, then grammar.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Individual Diffs Box -->
+                        <div class="bg-indigo-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-indigo-300">2. Individual Cognitive Differences</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white"><button data-modal-target="#modal-carroll" class="modal-trigger">Language Aptitude:</button></strong> (See Week 5) Specific talent for language learning. Measured by MLAT (John Carroll).
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Gass et al. (2013, p. 445) detail its four components:</li>
+                                        <li>Phonemic coding ability: Discriminating and encoding foreign sounds.</li>
+                                        <li>Grammatical sensitivity: Recognizing word functions.</li>
+                                        <li>Inductive language-learning ability: Inferring rules from samples.</li>
+                                        <li>Rote-learning ability (Associative memory): Remembering L1-L2 vocabulary associations.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Learning Strategies:</strong> (See Week 5) Conscious actions to aid learning.
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Gass et al. (2013, p. 468) cite O'Malley & Chamot's (1900) classification:</li>
+                                        <li><strong class="font-medium text-indigo-300">Metacognitive:</strong> Planning, monitoring, evaluating.</li>
+                                        <li><strong class="font-medium text-indigo-300">Cognitive:</strong> Repetition, note-taking, inferencing.</li>
+                                        <li><strong class="font-medium text-indigo-300">Social/Affective:</strong> Asking for clarification, managing anxiety.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Intelligence:</strong> General cognitive ability (distinct from aptitude).</li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-indigo-300">2. Individual Cognitive Differences</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white"><button data-modal-target="#modal-carroll" class="modal-trigger">Language Aptitude:</button></strong> (See Week 5) Specific talent for language learning. Measured by MLAT (John Carroll).
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Gass et al. (2013, p. 445) detail its four components:</li>
-                                    <li>Phonemic coding ability: Discriminating and encoding foreign sounds.</li>
-                                    <li>Grammatical sensitivity: Recognizing word functions.</li>
-                                    <li>Inductive language-learning ability: Inferring rules from samples.</li>
-                                    <li>Rote-learning ability (Associative memory): Remembering L1-L2 vocabulary associations.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Learning Strategies:</strong> (See Week 5) Conscious actions to aid learning.
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Gass et al. (2013, p. 468) cite O'Malley & Chamot's (1990) classification:</li>
-                                    <li><strong class="font-medium">Metacognitive:</strong> Planning, monitoring, evaluating.</li>
-                                    <li><strong class="font-medium">Cognitive:</strong> Repetition, note-taking, inferencing.</li>
-                                    <li><strong class="font-medium">Social/Affective:</strong> Asking for clarification, managing anxiety.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Intelligence:</strong> General cognitive ability (distinct from aptitude).</li>
-                        </ul>
+                        <!-- Key Theories Box -->
+                        <div class="bg-indigo-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-indigo-300">3. Key Theories</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Executive Control Theory:</strong> Bilingualism enhances executive functions (Ellen Bialystok).</li>
+                                <li><strong class="font-semibold text-white">Critical Period Hypothesis (CPH):</strong> Biological constraints limit ultimate attainment (Lenneberg).</li>
+                                <li><strong class="font-semibold text-white">Cognitive Reserve Theory:</strong> Bilingualism contributes to brain resilience.</li>
+                                <li><strong class="font-semibold text-white">Language Aptitude Theory:</strong> (Carroll) Specific cognitive abilities (measured by MLAT) predict success, particularly the rate of learning in formal settings.</li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-indigo-300">3. Key Theories</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Executive Control Theory:</strong> Bilingualism enhances executive functions (Ellen Bialystok).</li>
-                            <li><strong class="font-semibold text-white">Critical Period Hypothesis (CPH):</strong> Biological constraints limit ultimate attainment (Lenneberg).</li>
-                            <li><strong class="font-semibold text-white">Cognitive Reserve Theory:</strong> Bilingualism contributes to brain resilience.</li>
-                            <li><strong class="font-semibold text-white">Language Aptitude Theory:</strong> (Carroll) Specific cognitive abilities (measured by MLAT) predict success, particularly the rate of learning in formal settings.</li>
-                        </ul>
-
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-indigo-300">4. Key Figures</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-3 resizable-text">
-                            <li><strong class="font-semibold text-white">Ellen Bialystok:</strong> Executive control advantages. Gass et al. (2013, p. 438, 482) cite her work.</li>
-                            <li><strong class="font-semibold text-white">Judith Kroll:</strong> Psycholinguistic aspects (word recognition, language representation).</li>
-                            <li><strong class="font-semibold text-white">Aneta Pavlenko:</strong> Bilingualism, cognition, and emotion.</li>
-                            <li><strong class="font-semibold text-white">John Carroll:</strong> Language aptitude (MLAT) (Gass et al., 2013, p. 445).</li>
-                        </ul>
-
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-indigo-300">5. Required Resources</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
-                            <li>Saville-Troike & Barto (2016), Chapter 3: "The Psychology of SLA"</li>
-                            <li>Pavlenko (A.) (2007), Chapters 2-3: "Bilingual minds" (Note: This citation from the original summary file may be inaccurate. Pavlenko's 2005 "Bilingual Minds" book is a key text.).</li>
-                            <li>Bialystok, E. (2001). Bilingualism in Development.</li>
-                            <li>Kroll, J.F. & De Groot, A.M.B. (Eds.). (2005). Handbook of Bilingualism.</li>
-                            <li>Gass, S. M., Behney, J., & Plonsky, L. (2Data_Science_M-AF-NP-T-3-AF-NP-J-T-3-T-NP-J-T-2-T-NP-J-T-1/2. Second Language Acquisition: An Introductory Course (4th ed.).</li>
-                            <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
-                        </ul>
+                        <!-- Key Figures Box -->
+                        <div class="bg-indigo-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-indigo-300">4. Key Figures</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-3 resizable-text">
+                                <li><strong class="font-semibold text-white">Ellen Bialystok:</strong> Executive control advantages. Gass et al. (2013, p. 438, 482) cite her work.</li>
+                                <li><strong class="font-semibold text-white">Judith Kroll:</strong> Psycholinguistic aspects (word recognition, language representation).</li>
+                                <li><strong class="font-semibold text-white">Aneta Pavlenko:</strong> Bilingualism, cognition, and emotion.</li>
+                                <li><strong class="font-semibold text-white">John Carroll:</strong> Language aptitude (MLAT) (Gass et al., 2013, p. 445).</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Required Resources Box -->
+                        <div class="bg-indigo-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-indigo-300">5. Required Resources</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
+                                <li>Saville-Troike & Barto (2016), Chapter 3: "The Psychology of SLA"</li>
+                                <li>Pavlenko (A.) (2007), Chapters 2-3: "Bilingual minds" (Note: This citation from the original summary file may be inaccurate. Pavlenko's 2005 "Bilingual Minds" book is a key text.).</li>
+                                <li>Bialystok, E. (2001). Bilingualism in Development.</li>
+                                <li>Kroll, J.F. & De Groot, A.M.B. (Eds.). (2005). Handbook of Bilingualism.</li>
+                                <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
+                                <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -337,66 +364,82 @@
                     </svg>
                 </button>
                 <div id="week-3-content" class="accordion-content bg-gray-800 text-gray-200">
-                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-teal-500">
-                        <h3 class="text-xl md:text-2xl font-bold mb-5 text-teal-300">1. Key Concepts Covered</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Zone of Proximal Development (ZPD):</strong> (Vygotsky) Core SCT concept. Gass, Behney, & Plonsky (2013) cite Vygotsky's (1978) definition: "the distance between the actual developmental level... and the level of potential development as determined through problem solving under adult guidance or in collaboration with more capable peers" (p. 295). Learning occurs first on an interpersonal plane.</li>
-                            <li><strong class="font-semibold text-white">Scaffolding & Mediation:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Scaffolding:</strong> Verbal/non-verbal support from an MKO (More Knowledgeable Other) or peer to help a learner perform a task in their ZPD.</li>
-                                    <li><strong class="font-medium">Mediation:</strong> Broader SCT concept. Gass et al. (2013) explain all human activity is "mediated" by tools (material artifacts or symbolic artifacts like language). Language is the primary symbolic tool shaping thought.</li>
-                                    <li><strong class="font-medium">Regulation:</strong> A form of mediation moving through 3 stages (Gass et al., 2013):
-                                        <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
-                                            <li>Object-regulation: Using objects to manage a task.</li>
-                                            <li>Other-regulation: A person guides the learner (scaffolding).</li>
-                                            <li>Self-regulation: Learner takes control, often via Private Speech.</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white"><button data-modal-target="#modal-lave-wenger" class="modal-trigger">Communities of Practice (CoP):</button></strong> (Lave & Wenger) Groups defined by shared practices. Learning involves moving from legitimate peripheral participation (newcomer) towards full participation.</li>
-                            <li><strong class="font-semibold text-white"><button data-modal-target="#modal-norton" class="modal-trigger">Investment vs. Motivation:</button></strong> (Bonny Norton) Argues 'motivation' is insufficient. Learners 'invest' in an L2 expecting a 'return' (social, economic). Linked to identity and power relations.</li>
-                            <li><strong class="font-semibold text-white">Social Identity Construction:</strong> Identity is dynamic, multiple, and socially constructed through language use.</li>
-                            <li><strong class="font-semibold text-white">Power Relations:</strong> Social hierarchies affecting learners' access, opportunities, and investment.</li>
-                        </ul>
+                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-teal-500 space-y-8">
+                        
+                        <!-- Key Concepts Box -->
+                        <div class="bg-teal-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-teal-300">1. Key Concepts Covered</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Zone of Proximal Development (ZPD):</strong> (Vygotsky) Core SCT concept. Gass, Behney, & Plonsky (2013) cite Vygotsky's (1978) definition: "the distance between the actual developmental level... and the level of potential development as determined through problem solving under adult guidance or in collaboration with more capable peers" (p. 295). Learning occurs first on an interpersonal plane.</li>
+                                <li><strong class="font-semibold text-white">Scaffolding & Mediation:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-teal-300">Scaffolding:</strong> Verbal/non-verbal support from an MKO (More Knowledgeable Other) or peer to help a learner perform a task in their ZPD.</li>
+                                        <li><strong class="font-medium text-teal-300">Mediation:</strong> Broader SCT concept. Gass et al. (2013) explain all human activity is "mediated" by tools (material artifacts or symbolic artifacts like language). Language is the primary symbolic tool shaping thought.</li>
+                                        <li><strong class="font-medium text-teal-300">Regulation:</strong> A form of mediation moving through 3 stages (Gass et al., 2013):
+                                            <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
+                                                <li>Object-regulation: Using objects to manage a task.</li>
+                                                <li>Other-regulation: A person guides the learner (scaffolding).</li>
+                                                <li>Self-regulation: Learner takes control, often via Private Speech.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white"><button data-modal-target="#modal-lave-wenger" class="modal-trigger">Communities of Practice (CoP):</button></strong> (Lave & Wenger) Groups defined by shared practices. Learning involves moving from legitimate peripheral participation (newcomer) towards full participation.</li>
+                                <li><strong class="font-semibold text-white"><button data-modal-target="#modal-norton" class="modal-trigger">Investment vs. Motivation:</button></strong> (Bonny Norton) Argues 'motivation' is insufficient. Learners 'invest' in an L2 expecting a 'return' (social, economic). Linked to identity and power relations.</li>
+                                <li><strong class="font-semibold text-white">Social Identity Construction:</strong> Identity is dynamic, multiple, and socially constructed through language use.</li>
+                                <li><strong class="font-semibold text-white">Power Relations:</strong> Social hierarchies affecting learners' access, opportunities, and investment.</li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-teal-300">2. Social Dynamics and Factors</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Classroom Dynamics:</strong> Teacher-student and peer interactions, classroom culture.</li>
-                            <li><strong class="font-semibold text-white">Natural Settings:</strong> Language contact, social networks, community integration.</li>
-                        </ul>
+                        <!-- Social Dynamics Box -->
+                        <div class="bg-teal-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-teal-300">2. Social Dynamics and Factors</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Classroom Dynamics:</strong> Teacher-student and peer interactions, classroom culture.</li>
+                                <li><strong class="font-semibold text-white">Natural Settings:</strong> Language contact, social networks, community integration.</li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-teal-300">3. Key Theories</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Sociocultural Theory (SCT):</strong> (Vygotsky) Higher mental functions originate in social interaction and are mediated by cultural tools. Key concepts:
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>ZPD, Scaffolding, Mediation (see above).</li>
-                                    <li><strong class="font-medium">Internalization:</strong> Moving from the social (interpersonal) plane to the individual (intrapsychological) plane (Gass et al., 2013, p. 294).</li>
-                                    <li><strong class="font-medium">Private Speech:</strong> "Talking to oneself" (Vygotsky, 1987) as a tool for self-regulation. Used by L2 learners (Gass et al., 2013, p. 295). A key mechanism of internalization.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Social Identity Theory:</strong> (Norton) L2 learning relates to learners' identities, investment, and power struggles.</li>
-                            <li><strong class="font-semibold text-white">Communities of Practice Theory:</strong> (Lave & Wenger) Learning is situated social participation.</li>
-                            <li><strong class="font-semibold text-white">Investment Theory:</strong> (Norton) Explains engagement via identity, investment, and power.</li>
-                        </ul>
+                        <!-- Key Theories Box -->
+                        <div class="bg-teal-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-teal-300">3. Key Theories</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Sociocultural Theory (SCT):</strong> (Vygotsky) Higher mental functions originate in social interaction and are mediated by cultural tools. <strong class="font-medium text-teal-300">Key concepts:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>ZPD, Scaffolding, Mediation (see above).</li>
+                                        <li><strong class="font-medium text-teal-300">Internalization:</strong> Moving from the social (interpersonal) plane to the individual (intrapsychological) plane (Gass et al., 2013, p. 294).</li>
+                                        <li><strong class="font-medium text-teal-300">Private Speech:</strong> "Talking to oneself" (Vygotsky, 1987) as a tool for self-regulation. Used by L2 learners (Gass et al., 2013, p. 295). A key mechanism of internalization.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Social Identity Theory:</strong> (Norton) L2 learning relates to learners' identities, investment, and power struggles.</li>
+                                <li><strong class="font-semibold text-white">Communities of Practice Theory:</strong> (Lave & Wenger) Learning is situated social participation.</li>
+                                <li><strong class="font-semibold text-white">Investment Theory:</strong> (Norton) Explains engagement via identity, investment, and power.</li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-teal-300">4. Key Figures</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-3 resizable-text">
-                            <li><strong class="font-semibold text-white">Lev Vygotsky:</strong> Foundational figure for Sociocultural Theory (SCT).</li>
-                            <li><strong class="font-semibold text-white">Bonny Norton:</strong> Investment and Social Identity theories.</li>
-                            <li><strong class="font-semibold text-white">Jean Lave & Etienne Wenger:</strong> Situated Learning and Communities of Practice.</li>
-                            <li><strong class="font-semibold text-white">James Lantolf:</strong> Applied Vygotsky's SCT to SLA research.</li>
-                        </ul>
+                        <!-- Key Figures Box -->
+                        <div class="bg-teal-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-teal-300">4. Key Figures</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-3 resizable-text">
+                                <li><strong class="font-semibold text-white">Lev Vygotsky:</strong> Foundational figure for Sociocultural Theory (SCT).</li>
+                                <li><strong class="font-semibold text-white">Bonny Norton:</strong> Investment and Social Identity theories.</li>
+                                <li><strong class="font-semibold text-white">Jean Lave & Etienne Wenger:</strong> Situated Learning and Communities of Practice.</li>
+                                <li><strong class="font-semibold text-white">James Lantolf:</strong> Applied Vygotsky's SCT to SLA research.</li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-teal-300">5. Required Resources</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
-                            <li>Vygotsky, L.S. (1978). Mind in Society.</li>
-                            <li>Norton, B. (2013). Identity and Language Learning (2nd ed.).</li>
-                            <li>Lave, J. & Wenger, E. (1991). Situated Learning.</li>
-                            <li>Heller (M.) (Ed.). (2007). Bilingualism: A Social Approach.</li>
-                            <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
-                            <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
-                        </ul>
+                        <!-- Required Resources Box -->
+                        <div class="bg-teal-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-teal-300">5. Required Resources</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
+                                <li>Vygotsky, L.S. (1978). Mind in Society.</li>
+                                <li>Norton, B. (2013). Identity and Language Learning (2nd ed.).</li>
+                                <li>Lave, J. & Wenger, E. (1991). Situated Learning.</li>
+                                <li>Heller (M.) (Ed.). (2007). Bilingualism: A Social Approach.</li>
+                                <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
+                                <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -410,121 +453,134 @@
                     </svg>
                 </button>
                 <div id="week-4-content" class="accordion-content bg-gray-800 text-gray-200">
-                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-sky-500">
-                        <h3 class="text-xl md:text-2xl font-bold mb-5 text-sky-300">1. Key Concepts Covered</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Language Ideologies:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Definition:</strong> Baker & Wright (2017) describe as "a set of beliefs and ideas... linked to the distribution of power and resources" (p. 102) that "justify and rationalize existing social and power structures."</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Standard Language Ideology:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Definition:</strong> Belief that a single, standardized form ("school" language) is inherently superior and more "correct" than other varieties (dialects).</li>
-                                    <li><strong class="font-medium">Impact:</strong> "Privileges the language of dominant, powerful groups" and devalues varieties of subordinate groups in schools (Baker & Wright, 2017, p. 102-103).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Monolingual Ideology (or "Monolingual Mindset"):</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Definition:</strong> Belief that monolingualism is the norm or ideal. Treats bilingualism as a "problem to be remedied" not a resource (Baker & Wright, 2017, p. 306).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Language Policy (and Planning) (LPP):</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Definition:</strong> Explicit decisions to influence language use, status, and acquisition.</li>
-                                    <li><strong class="font-medium">Types (Baker & Wright, 2017, p. 110):</strong>
-                                        <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
-                                            <li><strong class="font-normal">Status Planning:</strong> Changing the use/function of a language (e.g., making it official).</li>
-                                            <li><strong class="font-normal">Corpus Planning:</strong> Changing the structure of a language (e.g., standardizing spelling).</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Educational Models for Bilingual Learners:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Baker & Wright (2017, Ch. 11) categorize into "Weak" (Subtractive) and "Strong" (Additive) forms.</li>
-                                    <li><strong class="font-medium">Transitional (TBE):</strong> Weak/subtractive. L1 used as temporary bridge to L2-only instruction. Goal is assimilation, not bilingualism (p. 211).</li>
-                                    <li><strong class="font-medium">Maintenance (Developmental):</strong> Strong/additive. Aims for full bilingualism/biliteracy for language minority students via L1+L2 instruction (p. 216).</li>
-                                    <li><strong class="font-medium">Two-Way Immersion (TWI) / Dual Language:</strong> Strong/additive. Integrates language minority and majority students; instruction in both languages for all (p. 222).</li>
-                                    <li><strong class="font-medium">CLIL:</strong> Content and Language Integrated Learning. Teaching subject matter (e.g., science) through a non-native language (p. 219).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Language Rights:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Definition:</strong> The idea that using/maintaining one's language is a fundamental human right, essential for cultural identity (Baker & Wright, 2017, Ch. 18).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Linguistic Genocide:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Definition:</strong> (Tove Skutnabb-Kangas) "any action that has as its aim or outcome the disappearance of a language" (Baker & Wright, 2017, p. 385). Often accomplished via subtractive education policies.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Language Revitalization:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Definition:</strong> Efforts to reverse the decline of an endangered language (Baker & Wright, 2017, p. 57), linked to Fishman's "Reversing Language Shift" (RLS).</li>
-                                    <li><strong class="font-medium">Fishman's GIDS Scale:</strong> Tool to classify language health based on intergenerational transmission.</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-sky-500 space-y-8">
+                        
+                        <!-- Key Concepts Box -->
+                        <div class="bg-sky-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-sky-300">1. Key Concepts Covered</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Language Ideologies:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Definition:</strong> Baker & Wright (2017) describe as "a set of beliefs and ideas... linked to the distribution of power and resources" (p. 102) that "justify and rationalize existing social and power structures."</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Standard Language Ideology:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Definition:</strong> Belief that a single, standardized form ("school" language) is inherently superior and more "correct" than other varieties (dialects).</li>
+                                        <li><strong class="font-medium text-sky-300">Impact:</strong> "Privileges the language of dominant, powerful groups" and devalues varieties of subordinate groups in schools (Baker & Wright, 2017, p. 102-103).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Monolingual Ideology (or "Monolingual Mindset"):</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Definition:</strong> Belief that monolingualism is the norm or ideal. Treats bilingualism as a "problem to be remedied" not a resource (Baker & Wright, 2017, p. 306).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Language Policy (and Planning) (LPP):</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Definition:</strong> Explicit decisions to influence language use, status, and acquisition.</li>
+                                        <li><strong class="font-medium text-sky-300">Types (Baker & Wright, 2017, p. 110):</strong>
+                                            <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
+                                                <li><strong class="font-normal">Status Planning:</strong> Changing the use/function of a language (e.g., making it official).</li>
+                                                <li><strong class="font-normal">Corpus Planning:</strong> Changing the structure of a language (e.g., standardizing spelling).</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Educational Models for Bilingual Learners:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Baker & Wright (2017, Ch. 11) categorize into "Weak" (Subtractive) and "Strong" (Additive) forms.</li>
+                                        <li><strong class="font-medium text-sky-300">Transitional (TBE):</strong> Weak/subtractive. L1 used as temporary bridge to L2-only instruction. Goal is assimilation, not bilingualism (p. 211).</li>
+                                        <li><strong class="font-medium text-sky-300">Maintenance (Developmental):</strong> Strong/additive. Aims for full bilingualism/biliteracy for language minority students via L1+L2 instruction (p. 216).</li>
+                                        <li><strong class="font-medium text-sky-300">Two-Way Immersion (TWI) / Dual Language:</strong> Strong/additive. Integrates language minority and majority students; instruction in both languages for all (p. 222).</li>
+                                        <li><strong class="font-medium text-sky-300">CLIL:</strong> Content and Language Integrated Learning. Teaching subject matter (e.g., science) through a non-native language (p. 219).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Language Rights:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Definition:</strong> The idea that using/maintaining one's language is a fundamental human right, essential for cultural identity (Baker & Wright, 2017, Ch. 18).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Linguistic Genocide:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Definition:</strong> (Tove Skutnabb-Kangas) "any action that has as its aim or outcome the disappearance of a language" (Baker & Wright, 2017, p. 385). Often accomplished via subtractive education policies.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Language Revitalization:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Definition:</strong> Efforts to reverse the decline of an endangered language (Baker & Wright, 2017, p. 57), linked to Fishman's "Reversing Language Shift" (RLS).</li>
+                                        <li><strong class="font-medium text-sky-300">Fishman's GIDS Scale:</strong> Tool to classify language health based on intergenerational transmission.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Key Theories Box -->
+                        <div class="bg-sky-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-sky-300">2. Key Theories</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Language Ideology Theory:</strong> Analyzes how beliefs about language legitimize social and linguistic hierarchies (see above).</li>
+                                <li><strong class="font-semibold text-white">Language Policy and Planning Theory:</strong> Studies the processes and outcomes of language-related decision-making.</li>
+                                <li><strong class="font-semibold text-white">Language Rights Theory:</strong> Advocates for linguistic rights based on human rights principles (see Skutnabb-Kangas).</li>
+                                <li><strong class="font-semibold text-white">Critical Theory (<button data-modal-target="#modal-bourdieu" class="modal-trigger">Bourdieu</button>):</strong> Baker & Wright (2017, p. 103, 307) apply this: schools value the "cultural capital" and "habitus" (dispositions, language use) of the dominant class. "Standard" language = "legitimate language" with "symbolic power," devaluing minority students' language capital.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Key Figures Box -->
+                        <div class="bg-sky-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-sky-300">3. Key Figures</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-3 resizable-text">
+                                <li><strong class="font-semibold text-white">Joshua Fishman:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Contribution:</strong> Foundational figure in sociology of language.</li>
+                                        <li><strong class="font-medium text-sky-300">Key Concepts (from B&W, 2017):</strong> Language maintenance and shift (p. 55-57), language revitalization (GIDS scale, p. 57).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Jim Cummins:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Contribution:</strong> Most influential theorist in bilingual education.</li>
+                                        <li><strong class="font-medium text-sky-300">Key Concepts (from B&W, 2017):</strong>
+                                            <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
+                                                <li><strong class="font-normal"><button data-modal-target="#modal-cummins" class="modal-trigger">BICS/CALP Distinction</button> ("Iceberg Metaphor"):</strong> BICS (Basic Interpersonal Communicative Skills) = "surface" social language (learn in ~2 yrs). CALP (Cognitive Academic Language Proficiency) = "submerged" abstract "school" language (takes 5-7+ yrs) (p. 154-156).</li>
+                                                <li><strong class="font-normal">CUP (Common Underlying Proficiency) / Interdependence Hypothesis:</strong> BICS in L1/L2 are separate, but CALP (academic skills) is shared in a CUP. Strengthening L1 transfers to and strengthens L2 (p. 154).</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Tove Skutnabb-Kangas:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Contribution:</strong> Leading advocate for linguistic human rights.</li>
+                                        <li><strong class="font-medium text-sky-300">Key Concepts (from B&W, 2017):</strong> Coined "linguistic genocide" (p. 385); argues for mother tongue education as a basic human right.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Nancy Hornberger:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Contribution:</strong> Leading scholar in LPP and biliteracy.</li>
+                                        <li><strong class="font-medium text-sky-300">Key Concepts (from B&W, 2017):</strong> Developed the "Continua of Biliteracy" (p. 250), a framework to analyze bilingual programs.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white"><button data-modal-target="#modal-bourdieu" class="modal-trigger">Pierre Bourdieu:</button></strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-sky-300">Contribution:</strong> Sociologist (B&W, 2017, p. 103, 307).</li>
+                                        <li><strong class="font-medium text-sky-300">Key Concepts:</strong> Symbolic Power, Cultural Capital, Habitus, Legitimate Language.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-sky-300">2. Key Theories</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Language Ideology Theory:</strong> Analyzes how beliefs about language legitimize social and linguistic hierarchies (see above).</li>
-                            <li><strong class="font-semibold text-white">Language Policy and Planning Theory:</strong> Studies the processes and outcomes of language-related decision-making.</li>
-                            <li><strong class="font-semibold text-white">Language Rights Theory:</strong> Advocates for linguistic rights based on human rights principles (see Skutnabb-Kangas).</li>
-                            <li><strong class="font-semibold text-white">Critical Theory (<button data-modal-target="#modal-bourdieu" class="modal-trigger">Bourdieu</button>):</strong> Baker & Wright (2017, p. 103, 307) apply this: schools value the "cultural capital" and "habitus" (dispositions, language use) of the dominant class. "Standard" language = "legitimate language" with "symbolic power," devaluing minority students' language capital.</li>
-                        </ul>
-
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-sky-300">3. Key Figures</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-3 resizable-text">
-                            <li><strong class="font-semibold text-white">Joshua Fishman:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Contribution:</strong> Foundational figure in sociology of language.</li>
-                                    <li><strong class="font-medium">Key Concepts (from B&W, 2017):</strong> Language maintenance and shift (p. 55-57), language revitalization (GIDS scale, p. 57).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Jim Cummins:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Contribution:</strong> Most influential theorist in bilingual education.</li>
-                                    <li><strong class="font-medium">Key Concepts (from B&W, 2017):</strong>
-                                        <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
-                                            <li><strong class="font-normal"><button data-modal-target="#modal-cummins" class="modal-trigger">BICS/CALP Distinction</button> ("Iceberg Metaphor"):</strong> BICS (Basic Interpersonal Communicative Skills) = "surface" social language (learn in ~2 yrs). CALP (Cognitive Academic Language Proficiency) = "submerged" abstract "school" language (takes 5-7+ yrs) (p. 154-156).</li>
-                                            <li><strong class="font-normal">CUP (Common Underlying Proficiency) / Interdependence Hypothesis:</strong> BICS in L1/L2 are separate, but CALP (academic skills) is shared in a CUP. Strengthening L1 transfers to and strengthens L2 (p. 154).</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Tove Skutnabb-Kangas:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Contribution:</strong> Leading advocate for linguistic human rights.</li>
-                                    <li><strong class="font-medium">Key Concepts (from B&W, 2017):</strong> Coined "linguistic genocide" (p. 385); argues for mother tongue education as a basic human right.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Nancy Hornberger:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Contribution:</strong> Leading scholar in LPP and biliteracy.</li>
-                                    <li><strong class="font-medium">Key Concepts (from B&W, 2017):</strong> Developed the "Continua of Biliteracy" (p. 250), a framework to analyze bilingual programs.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white"><button data-modal-target="#modal-bourdieu" class="modal-trigger">Pierre Bourdieu:</button></strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Contribution:</strong> Sociologist (B&W, 2017, p. 103, 307).</li>
-                                    <li><strong class="font-medium">Key Concepts:</strong> Symbolic Power, Cultural Capital, Habitus, Legitimate Language.</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-sky-300">4. Required Resources</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
-                            <li>Cummins, J. (2000). Language, Power and Pedagogy.</li>
-                            <li>Skutnabb-Kangas, T. (2000). Linguistic Genocide in Education.</li>
-                            <li>Hornberger, N.H. (Ed.). (2003). Continua of Biliteracy.</li>
-                            <li>Edwards (J.) (2012). Multilingualism.</li>
-                            <li>May, S. (2012). Language and minority rights.</li>
-                            <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
-                            <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
-                            <li>Baker, C., & Wright, W. E. (2017). Foundations of Bilingual Education and Bilingualism (6th ed.).</li>
-                        </ul>
+                        <!-- Required Resources Box -->
+                        <div class="bg-sky-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-sky-300">4. Required Resources</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
+                                <li>Cummins, J. (2000). Language, Power and Pedagogy.</li>
+                                <li>Skutnabb-Kangas, T. (2000). Linguistic Genocide in Education.</li>
+                                <li>Hornberger, N.H. (Ed.). (2003). Continua of Biliteracy.</li>
+                                <li>Edwards (J.) (2012). Multilingualism.</li>
+                                <li>May, S. (2012). Language and minority rights.</li>
+                                <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
+                                <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
+                                <li>Baker, C., & Wright, W. E. (2017). Foundations of Bilingual Education and Bilingualism (6th ed.).</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -538,542 +594,101 @@
                     </svg>
                 </button>
                 <div id="week-5-content" class="accordion-content bg-gray-800 text-gray-200">
-                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-cyan-500">
-                        <h3 class="text-xl md:text-2xl font-bold mb-5 text-cyan-300">1. Key Concepts Covered</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Age Effects (CPH):</strong> (See Week 2).
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li>Gass et al. (2013, p. 435-436) note younger learners (children) generally achieve higher *ultimate attainment* (esp. phonology), but older learners (adults) are often faster in *initial stages* (rate).</li>
-                                    <li>Ellis (2015, Ch. 2) confirms this: older learners have cognitive maturity (rate advantage), but long-term disadvantage in ultimate attainment (esp. in naturalistic settings).</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Personality Factors:</strong> (Mixed/weak findings)
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Extroversion vs. Introversion:</strong> Gass et al. (2013, p. 465) and Ellis (2015, p. 49-50) agree results are "mixed and inconclusive."</li>
-                                    <li><strong class="font-medium">Risk-taking:</strong> Potentially beneficial.</li>
-                                    <li><strong class="font-medium">Anxiety:</strong> Specifically Language Anxiety.
-                                        <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
-                                            <li>Gass et al. (2013, p. 462) note a possible "curvilinear effect: low levels help, whereas high levels hurt."</li>
-                                            <li>Ellis (2015, p. 50, citing Horwitz) identifies sources: communication apprehension, fear of negative evaluation, test anxiety. Can be debilitative (harmful) or facilitative (motivating).</li>
-                                        </ul>
-                                    </li>
-                                    <li><strong class="font-medium">Self-esteem & Confidence:</strong> Often correlates positively.</li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Motivation Types:</strong>
-                                 <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Integrative:</strong> (Gardner) "disposition toward the L2 group and the extent to which he or she desires to interact with... that group" (Gass et al., 2013, p. 453).</li>
-                                    <li><strong class="font-medium">Instrumental:</strong> (Gardner) Learning for practical goals (job, grades) (Gass et al., 2013, p. 453).</li>
-                                    <li><strong class="font-medium">Intrinsic vs. Extrinsic:</strong> (Deci & Ryan - Self-Determination Theory)
-                                        <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
-                                            <li><strong class="font-normal">Intrinsic:</strong> "motivation to engage in an activity because it is enjoyable and satisfying" (Gass et al., 2013, p. 450).</li>
-                                            <li><strong class="font-normal">Extrinsic:</strong> "actions carried out to achieve some instrumental end" (p. 450).</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><strong class="font-semibold text-white">Cognitive Differences:</strong>
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Aptitude:</strong> (Carroll) Specific cognitive abilities (phonemic coding, etc.). Ellis (2015, p. 47) notes it's a "strong predictor of success... especially when learning takes place in a formal classroom setting."</li>
-                                    <li><strong class="font-medium">Learning Strategies & Styles:</strong> Strategies = specific actions; Styles = broad preferences. Strategies are "consciously selected by learners" to "enhance the learning" (Gass et al., 2013, p. 467, citing Cohen).</li>
-                                    <li><strong class="font-medium">Multiple Intelligences:</strong> (H. Gardner) e.g., linguistic, logical, spatial, etc.</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-cyan-300">2. Key Theories</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
-                            <li><strong class="font-semibold text-white">Critical Period Hypothesis:</strong> (Lenneberg) Biological constraints based on age (Gass et al., 2013, p. 434).</li>
-                            <li><strong class="font-semibold text-white"><button data-modal-target="#modal-gardner" class="modal-trigger">Gardner's Socio-Educational Model of Motivation:</button></strong> Emphasizes social context, attitudes, and integrative/instrumental orientations (Gass et al., 2013, p. 453-454).</li>
-                            <li><strong class="font-semibold text-white">Self-Determination Theory:</strong> (Deci & Ryan) Focuses on intrinsic vs. extrinsic motivation, autonomy, competence, and relatedness (Gass et al., 2013, p. 449-450).</li>
-                            <li><strong class="font-semibold text-white">Language Aptitude Theory:</strong> (Carroll) Specific cognitive abilities predict success (Gass et al., 2013, p. 445-446).</li>
-                            <li><strong class="font-semibold text-white"><button data-modal-target="#modal-dornyei" class="modal-trigger">Dörnyei's L2 Motivational Self System:</button></strong> (Ellis, 2015, p. 53-54). Motivation driven by future self-images:
-                                <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
-                                    <li><strong class="font-medium">Ideal L2 Self:</strong> The L2 speaker the learner wants to become.</li>
-                                    <li><strong class="font-medium">Ought-to L2 Self:</strong> Attributes the learner feels they should possess (expectations, avoiding negative outcomes).</li>
-                                    <li><strong class="font-medium">L2 Learning Experience:</strong> Situated factors in the immediate learning environment.</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-cyan-300">3. Key Figures</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-3 resizable-text">
-                            <li><strong class="font-semibold text-white">Eric Lenneberg:</strong> Proposed CPH biological basis (Gass et al., 2013, p. 435).</li>
-                            <li><strong class="font-semibold text-white">Robert Gardner:</strong> L2 motivation research (Socio-Educational Model) (Gass et al., 2013, p. 453).</li>
-                            <li><strong class="font-semibold text-white">John Carroll:</strong> Language aptitude (MLAT) (Gass et al., 2013, p. 445).</li>
-                            <li><strong class="font-semibold text-white">Zoltán Dörnyei:</strong> Contemporary motivation research (Gass et al., 2013, p. 455-456).</li>
-                            <li><strong class="font-semibold text-white">Howard Gardner:</strong> Theorist of Multiple Intelligences.</li>
-                        </ul>
-
-                        <h3 class="text-xl md:text-2xl font-bold mt-8 mb-5 text-cyan-300">4. Required Resources</h3>
-                        <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
-                            <li>Lenneberg, E. (1967). Biological Foundations of Language.</li>
-                            <li>Gardner, R.C. (1985). Social Psychology and Second Language Learning.</li>
-                            <li>Dörnyei, Z. (2005). The Psychology of the Language Learner.</li>
-                            <li>Saville-Troike & Barto (2016), Chapter 4: "Social contexts of SLA".</li>
-                            <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
-                            <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
-                            <li>Baker, C., & Wright, W. E. (2017). Foundations of Bilingual Education and Bilingualism (6th ed.).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- ############################# -->
-        <!-- ### INTERACTIVE EXERCISES ### -->
-        <!-- ############################# -->
-        <div class="p-8 md:p-12 bg-white border-t-2 border-gray-100">
-             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Interactive Exercises</h2>
-             <p class="resizable-header-p text-gray-700">
-                Test your knowledge with these quick questions. You'll get instant feedback for each answer.
-            </p>
-        </div>
-
-        <div id="exercise-accordion-container">
-            <!-- Week 1 Exercises -->
-            <div class="accordion-item border-t border-gray-200">
-                <button class="exercise-accordion-header flex justify-between items-center w-full p-6 text-left cursor-pointer bg-slate-800 text-white hover:bg-slate-700 transition-colors duration-300" data-target="#week-1-exercises">
-                    <span class="text-xl lg:text-2xl font-semibold">Week 1: Exercises</span>
-                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div id="week-1-exercises" class="exercise-accordion-content bg-gray-800 text-gray-200">
-                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-slate-500 space-y-8">
-
-                        <!-- Question 1.1 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">1. Which theory views language learning as habit formation through imitation and reinforcement?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="true">Behaviorist Theory</button>
-                                <button class="quiz-option" data-correct="false">Mentalist Theory</button>
-                                <button class="quiz-option" data-correct="false">Interactionist Theory</button>
-                                <button class="quiz-option" data-correct="false">Usage-based Theory</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 1.2 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">2. Noam Chomsky is the key figure for which theory, emphasizing an innate Language Acquisition Device (LAD) and Universal Grammar (UG)?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Behaviorist Theory</button>
-                                <button class="quiz-option" data-correct="true">Mentalist Theory</button>
-                                <button class="quiz-option" data-correct="false">Sociocultural Theory</button>
-                                <button class="quiz-option" data-correct="false">Usage-based Theory</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-
-                        <!-- Question 1.3 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">3. According to Krashen's Monitor Model, which hypothesis describes the subconscious 'picking up' of language?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">The Monitor Hypothesis</button>
-                                <button class="quiz-option" data-correct="false">The Input Hypothesis (i+1)</button>
-                                <button class="quiz-option" data-correct="true">The Acquisition-Learning Hypothesis</button>
-                                <button class="quiz-option" data-correct="false">The Affective Filter Hypothesis</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 1.4 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">4. Learning an L2 that replaces or weakens the L1 due to social pressure is known as:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Additive bilingualism</button>
-                                <button class="quiz-option" data-correct="true">Subtractive bilingualism</button>
-                                <button class="quiz-option" data-correct="false">Coordinate bilingualism</button>
-                                <button class="quiz-option" data-correct="false">Simultaneous bilingualism</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 1.5 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">5. Which figure is most associated with the concept of "Bilingual life and reality," viewing bilinguals as unique users, not two monolinguals?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Noam Chomsky</button>
-                                <button class="quiz-option" data-correct="false">B.F. Skinner</button>
-                                <button class="quiz-option" data-correct="true">François Grosjean</button>
-                                <button class="quiz-option" data-correct="false">Stephen Krashen</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 1.6 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">6. The theory that claims social interaction is crucial for language development is:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Mentalist Theory</button>
-                                <button class="quiz-option" data-correct="false">Behaviorist Theory</button>
-                                <button class="quiz-option" data-correct="true">Interactionist Theory</button>
-                                <button class="quiz-option" data-correct="false">Usage-based Theory</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                         <!-- Question 1.7 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">7. The theory that argues learning happens through exposure to authentic input and extracting patterns, rather than an innate UG, is:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="true">Usage-based Theory</button>
-                                <button class="quiz-option" data-correct="false">Mentalist Theory</button>
-                                <button class="quiz-option" data-correct="false">Behaviorist Theory</button>
-                                <button class="quiz-option" data-correct="false">Interactionist Theory</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <button class="reset-quiz text-sm text-cyan-400 hover:text-cyan-300 font-medium">Reset Questions</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 2 Exercises -->
-            <div class="accordion-item border-t border-gray-200">
-                <button class="exercise-accordion-header flex justify-between items-center w-full p-6 text-left cursor-pointer bg-indigo-800 text-white hover:bg-indigo-700 transition-colors duration-300" data-target="#week-2-exercises">
-                    <span class="text-xl lg:text-2xl font-semibold">Week 2: Exercises</span>
-                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div id="week-2-exercises" class="exercise-accordion-content bg-gray-800 text-gray-200">
-                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-indigo-500 space-y-8">
-                        
-                        <!-- Question 2.1 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">1. The 'bilingual advantage' theory, often associated with Ellen Bialystok, primarily suggests that bilinguals show enhancements in:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Rote-learning ability</button>
-                                <button class="quiz-option" data-correct="false">Metalinguistic Awareness</button>
-                                <button class="quiz-option" data-correct="true">Executive Control (attention, inhibition)</button>
-                                <button class="quiz-option" data-correct="false">Phonemic coding ability</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 2.2 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">2. Bilinguals' enhanced ability to consciously reflect on and manipulate language as an object is known as:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Neural plasticity</button>
-                                <button class="quiz-option" data-correct="false">Cognitive reserve</button>
-                                <button class="quiz-option" data-correct="true">Metalinguistic awareness</button>
-                                <button class="quiz-option" data-correct="false">Executive control</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 2.3 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">3. John Carroll is the key figure associated with which of these theories?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Cognitive Reserve Theory</button>
-                                <button class="quiz-option" data-correct="false">Executive Control Theory</button>
-                                <button class="quiz-option" data-correct="true">Language Aptitude Theory</button>
-                                <button class="quiz-option" data-correct="false">Critical Period Hypothesis</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 2.4 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">4. The idea that bilingualism can offer protection against age-related cognitive decline is known as:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="true">Cognitive Reserve Theory</button>
-                                <button class="quiz-option" data-correct="false">Executive Control Theory</button>
-                                <button class="quiz-option" data-correct="false">Neural Plasticity</button>
-                                <button class="quiz-option" data-correct="false">Metalinguistic Awareness</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 2.5 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">5. Which researcher is known for work on bilingual word recognition and production?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Ellen Bialystok</button>
-                                <button class="quiz-option" data-correct="true">Judith Kroll</button>
-                                <button class="quiz-option" data-correct="false">Aneta Pavlenko</button>
-                                <button class="quiz-option" data-correct="false">John Carroll</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 2.6 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">6. Which researcher is known for work on "bilingual minds," focusing on emotion and cognition?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Judith Kroll</button>
-                                <button class="quiz-option" data-correct="false">Ellen Bialystok</button>
-                                <button class="quiz-option" data-correct="true">Aneta Pavlenko</button>
-                                <button class="quiz-option" data-correct="false">John Carroll</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-
-                        <button class="reset-quiz text-sm text-cyan-400 hover:text-cyan-300 font-medium">Reset Questions</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 3 Exercises -->
-            <div class="accordion-item border-t border-gray-200">
-                <button class="exercise-accordion-header flex justify-between items-center w-full p-6 text-left cursor-pointer bg-teal-800 text-white hover:bg-teal-700 transition-colors duration-300" data-target="#week-3-exercises">
-                    <span class="text-xl lg:text-2xl font-semibold">Week 3: Exercises</span>
-                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div id="week-3-exercises" class="exercise-accordion-content bg-gray-800 text-gray-200">
-                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-teal-500 space-y-8">
-                        
-                        <!-- Question 3.1 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">1. Who is the foundational figure of Sociocultural Theory (SCT) and the ZPD?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Bonny Norton</button>
-                                <button class="quiz-option" data-correct="true">Lev Vygotsky</button>
-                                <button class="quiz-option" data-correct="false">James Lantolf</button>
-                                <button class="quiz-option" data-correct="false">Jean Lave</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-
-                        <!-- Question 3.2 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">2. The support provided by a "More Knowledgeable Other" (MKO) within the ZPD is called:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Mediation</button>
-                                <button class="quiz-option" data-correct="false">Investment</button>
-                                <button class="quiz-option" data-correct="true">Scaffolding</button>
-                                <button class="quiz-option" data-correct="false">Social Identity</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 3.3 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">3. Bonny Norton's theory that replaces 'motivation' with a concept linked to identity, power, and a 'return' on learning is:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="true">Investment Theory</button>
-                                <button class="quiz-option" data-correct="false">Sociocultural Theory</button>
-                                <button class="quiz-option" data-correct="false">Social Identity Theory</button>
-                                <button class="quiz-option" data-correct="false">Communities of Practice Theory</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 3.4 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">4. "Legitimate Peripheral Participation" (LPP) is a key concept in which theory developed by Lave & Wenger?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Sociocultural Theory</button>
-                                <button class="quiz-option" data-correct="false">Investment Theory</button>
-                                <button class="quiz-option" data-correct="true">Communities of Practice</button>
-                                <button class="quiz-option" data-correct="false">Social Identity Theory</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 3.5 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">5. Which figure is key for applying Vygotsky's Sociocultural Theory specifically to the field of SLA?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Bonny Norton</button>
-                                <button class="quiz-option" data-correct="false">Lev Vygotsky</button>
-                                <button class="quiz-option" data-correct="true">James Lantolf</button>
-                                <button class="quiz-option" data-correct="false">Etienne Wenger</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-
-                        <button class="reset-quiz text-sm text-cyan-400 hover:text-cyan-300 font-medium">Reset Questions</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 4 Exercises -->
-            <div class="accordion-item border-t border-gray-200">
-                <button class="exercise-accordion-header flex justify-between items-center w-full p-6 text-left cursor-pointer bg-sky-800 text-white hover:bg-sky-700 transition-colors duration-300" data-target="#week-4-exercises">
-                    <span class="text-xl lg:text-2xl font-semibold">Week 4: Exercises</span>
-                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div id="week-4-exercises" class="exercise-accordion-content bg-gray-800 text-gray-200">
-                    <div class="p-6 md:p-8 lg:p-10 border-l-4 border-sky-500 space-y-8">
-                        
-                        <!-- Question 4.1 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">1. Jim Cummins is known for the BICS/CALP distinction. What does CALP stand for?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Basic Interpersonal Communicative Skills</button>
-                                <button class="quiz-option" data-correct="true">Cognitive Academic Language Proficiency</button>
-                                <button class="quiz-option" data-correct="false">Critical Academic Language Policy</button>
-                                <button class="quiz-option" data-correct="false">Content and Language Integrated Learning</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 4.2 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">2. The belief that a 'standard' variety of a language is inherently superior to other dialects is called:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Monolingual ideology</button>
-                                <button class="quiz-option" data-correct="false">Language revitalization</button>
-                                <button class="quiz-option" data-correct="true">Standard language ideology</button>
-                                <button class="quiz-option" data-correct="false">Language rights</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 4.3 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">3. Which sociologist introduced the concepts of "legitimate language" and "symbolic power"?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Joshua Fishman</button>
-                                <button class="quiz-option" data-correct="true">Pierre Bourdieu</button>
-                                <button class="quiz-option" data-correct="false">Jim Cummins</button>
-                                <button class="quiz-option" data-correct="false">Tove Skutnabb-Kangas</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 4.4 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">4. The term "linguistic genocide" in education is most closely associated with:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Nancy Hornberger</button>
-                                <button class="quiz-option" data-correct="false">Joshua Fishman</button>
-                                <button class="quiz-option" data-correct="false">Jim Cummins</button>
-                                <button class="quiz-option" data-correct="true">Tove Skutnabb-Kangas</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 4.5 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">5. Which figure is a pioneer in "language maintenance and shift" and language revitalization?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="true">Joshua Fishman</button>
-                                <button class="quiz-option" data-correct="false">Pierre Bourdieu</button>
-                                <button class="quiz-option" data-correct="false">Jim Cummins</button>
-                                <button class="quiz-option" data-correct="false">Nancy Hornberger</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 4.6 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">6. A "Transitional" bilingual education model is considered a...?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">"Strong" or Additive model</button>
-                                <button class="quiz-option" data-correct="true">"Weak" or Subtractive model</button>
-                                <button class="quiz-option" data-correct="false">Language revitalization model</button>
-                                <button class="quiz-option" data-correct="false">CLIL model</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-                        
-                        <!-- Question 4.7 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">7. Which scholar, known for Language Policy and Planning, developed the "Continua of Biliteracy" framework?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Tove Skutnabb-Kangas</button>
-                                <button class="quiz-option" data-correct="false">Jim Cummins</button>
-                                <button class="quiz-option" data-correct="true">Nancy Hornberger</button>
-                                <button class="quiz-option" data-correct="false">Joshua Fishman</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-
-                        <button class="reset-quiz text-sm text-cyan-400 hover:text-cyan-300 font-medium">Reset Questions</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 5 Exercises -->
-            <div class="accordion-item border-t border-gray-200">
-                <button class="exercise-accordion-header flex justify-between items-center w-full p-6 text-left cursor-pointer bg-cyan-800 text-white hover:bg-cyan-700 transition-colors duration-300" data-target="#week-5-exercises">
-                    <span class="text-xl lg:text-2xl font-semibold">Week 5: Exercises</span>
-                    <svg class="w-6 h-6 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </button>
-                <div id="week-5-exercises" class="exercise-accordion-content bg-gray-800 text-gray-200">
                     <div class="p-6 md:p-8 lg:p-10 border-l-4 border-cyan-500 space-y-8">
                         
-                        <!-- Question 5.1 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">1. Which theorist is most associated with the 'L2 Motivational Self System' (Ideal L2 Self, Ought-to L2 Self)?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Robert Gardner</button>
-                                <button class="quiz-option" data-correct="false">John Carroll</button>
-                                <button class="quiz-option" data-correct="true">Zoltán Dörnyei</button>
-                                <button class="quiz-option" data-correct="false">Eric Lenneberg</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        <!-- Key Concepts Box -->
+                        <div class="bg-cyan-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-cyan-300">1. Key Concepts Covered</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Age Effects (CPH):</strong> (See Week 2).
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li>Gass et al. (2013, p. 435-436) note younger learners (children) generally achieve higher *ultimate attainment* (esp. phonology), but older learners (adults) are often faster in *initial stages* (rate).</li>
+                                        <li>Ellis (2015, Ch. 2) confirms this: older learners have cognitive maturity (rate advantage), but long-term disadvantage in ultimate attainment (esp. in naturalistic settings).</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Personality Factors:</strong> (Mixed/weak findings)
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-cyan-300">Extroversion vs. Introversion:</strong> Gass et al. (2013, p. 465) and Ellis (2015, p. 49-50) agree results are "mixed and inconclusive."</li>
+                                        <li><strong class="font-medium text-cyan-300">Risk-taking:</strong> Potentially beneficial.</li>
+                                        <li><strong class="font-medium text-cyan-300">Anxiety:</strong> Specifically Language Anxiety.
+                                            <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
+                                                <li>Gass et al. (2013, p. 462) note a possible "curvilinear effect: low levels help, whereas high levels hurt."</li>
+                                                <li>Ellis (2015, p. 50, citing Horwitz) identifies sources: communication apprehension, fear of negative evaluation, test anxiety. Can be debilitative (harmful) or facilitative (motivating).</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong class="font-medium text-cyan-300">Self-esteem & Confidence:</strong> Often correlates positively.</li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Motivation Types:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-cyan-300">Integrative:</strong> (Gardner) "disposition toward the L2 group and the extent to which he or she desires to interact with... that group" (Gass et al., 2013, p. 453).</li>
+                                        <li><strong class="font-medium text-cyan-300">Instrumental:</strong> (Gardner) Learning for practical goals (job, grades) (Gass et al., 2013, p. 453).</li>
+                                        <li><strong class="font-medium text-cyan-300">Intrinsic vs. Extrinsic:</strong> (Deci & Ryan - Self-Determination Theory)
+                                            <ul class="list-disc list-outside ml-6 mt-3 space-y-2">
+                                                <li><strong class="font-normal">Intrinsic:</strong> "motivation to engage in an activity because it is enjoyable and satisfying" (Gass et al., 2013, p. 450).</li>
+                                                <li><strong class="font-normal">Extrinsic:</strong> "actions carried out to achieve some instrumental end" (p. 450).</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><strong class="font-semibold text-white">Cognitive Differences:</strong>
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-cyan-300">Aptitude:</strong> (Carroll) Specific cognitive abilities (phonemic coding, etc.). Ellis (2015, p. 47) notes it's a "strong predictor of success... especially when learning takes place in a formal classroom setting."</li>
+                                        <li><strong class="font-medium text-cyan-300">Learning Strategies & Styles:</strong> Strategies = specific actions; Styles = broad preferences. Strategies are "consciously selected by learners" to "enhance the learning" (Gass et al., 2013, p. 467, citing Cohen).</li>
+                                        <li><strong class="font-medium text-cyan-300">Multiple Intelligences:</strong> (H. Gardner) e.g., linguistic, logical, spatial, etc.</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                         
-                        <!-- Question 5.2 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">2. According to Robert Gardner, a learner who wants to learn an L2 to get a better job has what kind of motivation?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Integrative</button>
-                                <button class="quiz-option" data-correct="true">Instrumental</button>
-                                <button class="quiz-option" data-correct="false">Intrinsic</button>
-                                <button class="quiz-option" data-correct="false">Extrinsic</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        <!-- Key Theories Box -->
+                        <div class="bg-cyan-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-cyan-300">2. Key Theories</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-4 resizable-text">
+                                <li><strong class="font-semibold text-white">Critical Period Hypothesis:</strong> (Lenneberg) Biological constraints based on age (Gass et al., 2013, p. 434).</li>
+                                <li><strong class="font-semibold text-white"><button data-modal-target="#modal-gardner" class="modal-trigger">Gardner's Socio-Educational Model of Motivation:</button></strong> Emphasizes social context, attitudes, and integrative/instrumental orientations (Gass et al., 2013, p. 453-454).</li>
+                                <li><strong class="font-semibold text-white">Self-Determination Theory:</strong> (Deci & Ryan) Focuses on intrinsic vs. extrinsic motivation, autonomy, competence, and relatedness (Gass et al., 2013, p. 449-450).</li>
+                                <li><strong class="font-semibold text-white">Language Aptitude Theory:</strong> (Carroll) Specific cognitive abilities predict success (Gass et al., 2013, p. 445-446).</li>
+                                <li><strong class="font-semibold text-white"><button data-modal-target="#modal-dornyei" class="modal-trigger">Dörnyei's L2 Motivational Self System:</button></strong> (Ellis, 2015, p. 53-54). Motivation driven by future self-images:
+                                    <ul class="list-circle list-outside ml-6 mt-3 space-y-2">
+                                        <li><strong class="font-medium text-cyan-300">Ideal L2 Self:</strong> The L2 speaker the learner wants to become.</li>
+                                        <li><strong class="font-medium text-cyan-300">Ought-to L2 Self:</strong> Attributes the learner feels they should possess (expectations, avoiding negative outcomes).</li>
+                                        <li><strong class="font-medium text-cyan-300">L2 Learning Experience:</strong> Situated factors in the immediate learning environment.</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                         
-                        <!-- Question 5.3 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">3. Who is the key figure who originally proposed the biological basis for the Critical Period Hypothesis?</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">John Carroll</button>
-                                <button class="quiz-option" data-correct="false">Robert Gardner</button>
-                                <button class="quiz-option" data-correct="true">Eric Lenneberg</button>
-                                <button class="quiz-option" data-correct="false">Zoltán Dörnyei</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        <!-- Key Figures Box -->
+                        <div class="bg-cyan-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-cyan-300">3. Key Figures</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-3 resizable-text">
+                                <li><strong class="font-semibold text-white">Eric Lenneberg:</strong> Proposed CPH biological basis (Gass et al., 2013, p. 435).</li>
+                                <li><strong class="font-semibold text-white">Robert Gardner:</strong> L2 motivation research (Socio-Educational Model) (Gass et al., 2013, p. 453).</li>
+                                <li><strong class="font-semibold text-white">John Carroll:</strong> Language aptitude (MLAT) (Gass et al., 2013, p. 445).</li>
+                                <li><strong class="font-semibold text-white">Zoltán Dörnyei:</strong> Contemporary motivation research (Gass et al., 2013, p. 455-456).</li>
+                                <li><strong class="font-semibold text-white">Howard Gardner:</strong> Theorist of Multiple Intelligences.</li>
+                            </ul>
                         </div>
                         
-                        <!-- Question 5.4 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">4. Self-Determination Theory is primarily concerned with:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Integrative vs. Instrumental motivation</button>
-                                <button class="quiz-option" data-correct="false">Language aptitude components</button>
-                                <button class="quiz-option" data-correct="true">Intrinsic vs. Extrinsic motivation</button>
-                                <button class="quiz-option" data-correct="false">The Ideal L2 Self</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        <!-- Required Resources Box -->
+                        <div class="bg-cyan-500/20 p-6 rounded-lg">
+                            <h3 class="text-xl md:text-2xl font-bold mb-5 text-cyan-300">4. Required Resources</h3>
+                            <ul class="list-disc list-outside ml-8 space-y-3 text-gray-400 italic resizable-text">
+                                <li>Lenneberg, E. (1967). Biological Foundations of Language.</li>
+                                <li>Gardner, R.C. (1985). Social Psychology and Second Language Learning.</li>
+                                <li>Dörnyei, Z. (2005). The Psychology of the Language Learner.</li>
+                                <li>Saville-Troike & Barto (2016), Chapter 4: "Social contexts of SLA".</li>
+                                <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
+                                <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
+                                <li>Baker, C., & Wright, W. E. (2017). Foundations of Bilingual Education and Bilingualism (6th ed.).</li>
+                            </ul>
                         </div>
-                        
-                        <!-- Question 5.5 -->
-                        <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">5. The theory of "Multiple Intelligences" (e.g., linguistic, logical, spatial) was proposed by:</p>
-                            <div class="space-y-3">
-                                <button class="quiz-option" data-correct="true">Howard Gardner</button>
-                                <button class="quiz-option" data-correct="false">Robert Gardner</button>
-                                <button class="quiz-option" data-correct="false">John Carroll</button>
-                                <button class="quiz-option" data-correct="false">Zoltán Dörnyei</button>
-                            </div>
-                            <p class="feedback-message mt-3 text-sm font-medium"></p>
-                        </div>
-
-                        <button class="reset-quiz text-sm text-cyan-400 hover:text-cyan-300 font-medium">Reset Questions</button>
                     </div>
                 </div>
             </div>
 
         </div>
-
 
         <!-- Footer -->
         <footer class="text-center p-8 bg-gray-50 text-gray-500 text-sm">
@@ -1097,13 +712,13 @@
                 <ul class="list-disc list-outside ml-6 space-y-3">
                     <li><strong class="font-semibold text-white">The Acquisition-Learning Hypothesis:</strong> This is the central hypothesis. It claims there are two independent systems:
                         <ul class="list-circle list-outside ml-6 mt-2 space-y-1">
-                            <li><strong class="font-medium">Acquisition:</strong> The subconscious, "natural" process of "picking up" a language, just as children do with their L1. It's used for fluent communication.</li>
-                            <li><strong class="font-medium">Learning:</strong> The conscious, intentional process of "knowing about" a language (e.g., memorizing grammar rules).</li>
+                            <li><strong class="font-medium text-slate-300">Acquisition:</strong> The subconscious, "natural" process of "picking up" a language, just as children do with their L1. It's used for fluent communication.</li>
+                            <li><strong class="font-medium text-slate-300">Learning:</strong> The conscious, intentional process of "knowing about" a language (e.g., memorizing grammar rules).</li>
                         </ul>
                     </li>
                     <li><strong class="font-semibold text-white">The Monitor Hypothesis:</strong> The "acquired" system is the source of all fluent output. The "learned" system acts only as an "inspector" or "Monitor" that checks and edits this output.
                         <ul class="list-circle list-outside ml-6 mt-2 space-y-1">
-                            <li><strong class="font-medium">Three Conditions for Use:</strong> The Monitor can only be used when the learner: (1) Has sufficient Time, (2) Is Focused on Form, and (3) Knows the Rule consciously.</li>
+                            <li><strong class="font-medium text-slate-300">Three Conditions for Use:</strong> The Monitor can only be used when the learner: (1) Has sufficient Time, (2) Is Focused on Form, and (3) Knows the Rule consciously.</li>
                         </ul>
                     </li>
                     <li><strong class="font-semibold text-white">The Natural Order Hypothesis:</strong> Claims that grammatical morphemes (like plural -s, past tense -ed) are acquired in a predictable order, regardless of L1, age, or instruction.</li>
@@ -1192,7 +807,7 @@
                     <li><strong class="font-semibold text-white">CUP (Common Underlying Proficiency) / The Interdependence Hypothesis:</strong>
                         <ul class="list-circle list-outside ml-6 mt-2 space-y-1">
                             <li>The "Dual Iceberg Model." While BICS (surface fluency) of L1 and L2 are separate, the CALP (academic skills, concepts) is shared in one common "engine."</li>
-                            <li><strong class="font-medium">Key Implication:</strong> Strengthening CALP in L1 (e.g., reading in Spanish) directly transfers to and strengthens CALP in L2 (e.g., English). This is the central argument for maintenance bilingual education.</li>
+                            <li><strong class="font-medium text-sky-300">Key Implication:</strong> Strengthening CALP in L1 (e.g., reading in Spanish) directly transfers to and strengthens CALP in L2 (e.g., English). This is the central argument for maintenance bilingual education.</li>
                         </ul>
                     </li>
                 </ul>
@@ -1240,7 +855,7 @@
     <!-- Dörnyei Modal -->
     <div id="modal-dornyei" class="modal fixed inset-0 z-40">
         <div class="modal-backdrop fixed inset-0 bg-black/70"></div>
-        <div class="modal-content fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 text-gray-200 rounded-lg shadow-xl p-8 z-50 max-w-2xl w-11/1S/G-AF-NP-T-3-AF-NP-J-T-3-T-NP-J-T-2-T-NP-J-T-1/2 max-h-[80vh] overflow-y-auto">
+        <div class="modal-content fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 text-gray-200 rounded-lg shadow-xl p-8 z-50 max-w-2xl w-11/12 max-h-[80vh] overflow-y-auto">
             <button class="modal-close absolute top-4 right-4 text-gray-400 hover:text-white text-3xl">&times;</button>
             <h2 class="text-2xl font-bold text-cyan-300 mb-6">Dörnyei's L2 Motivational Self System</h2>
             <div class="space-y-4 resizable-text">
@@ -1259,7 +874,6 @@
     <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // console.log("Study guide script loaded."); // For debugging
             
             const accordionHeaders = document.querySelectorAll('.accordion-header');
             
@@ -1320,9 +934,6 @@
                 document.querySelectorAll('.accordion-content.open').forEach(content => {
                     content.style.maxHeight = content.scrollHeight + 'px';
                 });
-                document.querySelectorAll('.exercise-accordion-content.open').forEach(content => {
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                });
             });
 
             // --- Font Size Toggle Script ---
@@ -1351,7 +962,7 @@
                 localStorage.setItem('fontSize', size);
 
                 // Recalculate open accordions
-                document.querySelectorAll('.accordion-content.open, .exercise-accordion-content.open').forEach(content => {
+                document.querySelectorAll('.accordion-content.open').forEach(content => {
                     // Use requestAnimationFrame to wait for browser repaint
                     requestAnimationFrame(() => {
                          content.style.maxHeight = content.scrollHeight + 'px';
@@ -1363,106 +974,6 @@
             if(fontDecrease) fontDecrease.addEventListener('click', () => setFontSize('font-size-sm'));
             if(fontReset) fontReset.addEventListener('click', () => setFontSize('font-size-md'));
             if(fontIncrease) fontIncrease.addEventListener('click', () => setFontSize('font-size-lg'));
-
-            // --- Exercise Accordion Script ---
-            const exerciseAccordionHeaders = document.querySelectorAll('.exercise-accordion-header');
-            
-            exerciseAccordionHeaders.forEach(header => {
-                header.addEventListener('click', function () {
-                    const targetContent = document.querySelector(this.dataset.target);
-                    const targetIcon = this.querySelector('svg');
-                    if (!targetContent || !targetIcon) return;
-                    const isAlreadyOpen = this.classList.contains('is-open');
-
-                    // Close all exercise items
-                    exerciseAccordionHeaders.forEach(h => {
-                        const content = document.querySelector(h.dataset.target);
-                        const icon = h.querySelector('svg');
-                        if (content && icon && h !== this) { // Only close OTHER items
-                            content.classList.remove('open');
-                            content.style.maxHeight = null;
-                            icon.classList.remove('rotate-180');
-                            h.classList.remove('is-open');
-                        }
-                    });
-
-                    // Toggle the clicked item
-                    if (isAlreadyOpen) {
-                        targetContent.classList.remove('open');
-                        targetContent.style.maxHeight = null;
-                        targetIcon.classList.remove('rotate-180');
-                        this.classList.remove('is-open');
-                    } else {
-                        targetContent.classList.add('open');
-                        targetContent.style.maxHeight = targetContent.scrollHeight + 'px';
-                        targetIcon.classList.add('rotate-180');
-                        this.classList.add('is-open');
-                    }
-                });
-            });
-
-            // --- Quiz Logic Script ---
-            const quizOptions = document.querySelectorAll('.quiz-option');
-
-            quizOptions.forEach(button => {
-                button.addEventListener('click', function() {
-                    const questionContainer = this.closest('.quiz-question');
-                    if (!questionContainer) return;
-                    const feedbackEl = questionContainer.querySelector('.feedback-message');
-                    const allOptions = questionContainer.querySelectorAll('.quiz-option');
-                    const isCorrect = this.dataset.correct === 'true';
-
-                    // Disable all buttons in this question
-                    allOptions.forEach(btn => btn.disabled = true);
-
-                    // Provide feedback
-                    if (isCorrect) {
-                        this.classList.add('correct');
-                        if(feedbackEl) {
-                            feedbackEl.textContent = 'Correct!';
-                            feedbackEl.classList.add('text-green-400');
-                            feedbackEl.classList.remove('text-red-400');
-                        }
-                    } else {
-                        this.classList.add('incorrect');
-                        if(feedbackEl) {
-                            feedbackEl.textContent = 'Incorrect. The correct answer is highlighted.';
-                            feedbackEl.classList.add('text-red-400');
-                            feedbackEl.classList.remove('text-green-400');
-                        }
-
-                        // Find and highlight the correct answer
-                        allOptions.forEach(btn => {
-                            if (btn.dataset.correct === 'true') {
-                                btn.classList.add('correct');
-                            }
-                        });
-                    }
-                });
-            });
-
-            // --- Reset Quiz Logic ---
-            const resetButtons = document.querySelectorAll('.reset-quiz');
-            resetButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    const quizContainer = this.closest('.exercise-accordion-content');
-                    if (!quizContainer) return;
-                    const allOptions = quizContainer.querySelectorAll('.quiz-option');
-                    const allFeedback = quizContainer.querySelectorAll('.feedback-message');
-
-                    // Enable all buttons
-                    allOptions.forEach(btn => {
-                        btn.disabled = false;
-                        btn.classList.remove('correct', 'incorrect');
-                    });
-
-                    // Clear all feedback messages
-                    allFeedback.forEach(msg => {
-                        msg.textContent = '';
-                        msg.classList.remove('text-green-400', 'text-red-400');
-                    });
-                });
-            });
 
             // --- Modal Logic Script ---
             const modalTriggers = document.querySelectorAll('.modal-trigger');
@@ -1518,5 +1029,4 @@
 
 </body>
 </html>
-
 
