@@ -24,71 +24,67 @@
             max-height: 1000vh; 
         }
 
-        /* --- Quiz Button Styles (Corrected) --- */
-        .quiz-option {
-            width: 100%;
-            padding: 0.75rem; /* p-3 */
-            text-align: left;
-            background-color: rgb(55 65 81); /* bg-gray-700 */
-            border: 1px solid rgb(75 85 99); /* border-gray-600 */
-            border-radius: 0.5rem; /* rounded-lg */
-            transition-property: background-color, border-color, color;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-duration: 200ms;
-        }
-        .quiz-option:hover {
-            background-color: rgb(75 85 99); /* hover:bg-gray-600 */
-        }
-        .quiz-option:disabled {
-            opacity: 0.7;
-            cursor: not-allowed;
-        }
-        .quiz-option.correct {
-            background-color: rgb(21 128 61); /* bg-green-700 */
-            border-color: rgb(22 163 74); /* border-green-600 */
-            color: rgb(255 255 255); /* text-white */
-        }
-        .quiz-option.incorrect {
-            background-color: rgb(185 28 28); /* bg-red-700 */
-            border-color: rgb(220 38 38); /* border-red-600 */
-            color: rgb(255 255 255); /* text-white */
-        }
-
-        /* --- Font Size Toggle CSS --- */
+        /* --- Font Size Toggle CSS (Corrected) --- */
 
         /* Small */
         .font-size-sm .resizable-text {
-            @apply text-sm md:text-base;
+            font-size: 0.875rem; /* 14px */
+            line-height: 1.25rem;
         }
         .font-size-sm .resizable-header-p {
-            @apply text-base;
+            font-size: 1rem; /* 16px */
+            line-height: 1.5rem;
         }
-        /* Only resize quiz question text, not buttons */
         .font-size-sm .resizable-quiz-question {
-             @apply text-lg;
+             font-size: 1.125rem; /* 18px */
+             line-height: 1.75rem;
+        }
+        @media (min-width: 768px) {
+            .font-size-sm .resizable-text {
+                font-size: 1rem; /* 16px */
+                line-height: 1.5rem;
+            }
         }
 
 
         /* Medium (Default) */
         .font-size-md .resizable-text {
-            @apply text-base md:text-lg;
+            font-size: 1rem; /* 16px */
+            line-height: 1.5rem;
         }
          .font-size-md .resizable-header-p {
-            @apply text-lg;
+            font-size: 1.125rem; /* 18px */
+            line-height: 1.75rem;
         }
         .font-size-md .resizable-quiz-question {
-             @apply text-xl;
+             font-size: 1.25rem; /* 20px */
+             line-height: 1.75rem;
+        }
+        @media (min-width: 768px) {
+            .font-size-md .resizable-text {
+                font-size: 1.125rem; /* 18px */
+                line-height: 1.75rem;
+            }
         }
 
         /* Large */
         .font-size-lg .resizable-text {
-            @apply text-lg md:text-xl;
+            font-size: 1.125rem; /* 18px */
+            line-height: 1.75rem;
         }
         .font-size-lg .resizable-header-p {
-            @apply text-xl;
+            font-size: 1.25rem; /* 20px */
+            line-height: 1.75rem;
         }
         .font-size-lg .resizable-quiz-question {
-             @apply text-2xl;
+             font-size: 1.5rem; /* 24px */
+             line-height: 2rem;
+        }
+        @media (min-width: 768px) {
+            .font-size-lg .resizable-text {
+                font-size: 1.25rem; /* 20px */
+                line-height: 1.75rem;
+            }
         }
 
 
@@ -325,7 +321,7 @@
                             <li>Pavlenko (A.) (2007), Chapters 2-3: "Bilingual minds" (Note: This citation from the original summary file may be inaccurate. Pavlenko's 2005 "Bilingual Minds" book is a key text.).</li>
                             <li>Bialystok, E. (2001). Bilingualism in Development.</li>
                             <li>Kroll, J.F. & De Groot, A.M.B. (Eds.). (2005). Handbook of Bilingualism.</li>
-                            <li>Gass, S. M., Behney, J., & Plonsky, L. (2013). Second Language Acquisition: An Introductory Course (4th ed.).</li>
+                            <li>Gass, S. M., Behney, J., & Plonsky, L. (2Data_Science_M-AF-NP-T-3-AF-NP-J-T-3-T-NP-J-T-2-T-NP-J-T-1/2. Second Language Acquisition: An Introductory Course (4th ed.).</li>
                             <li>Understanding Second Language Acquisition_ Second Edition -- Rod Ellis...</li>
                         </ul>
                     </div>
@@ -649,19 +645,31 @@
 
                         <!-- Question 1.1 -->
                         <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">1. Who wrote the 1959 review of B.F. Skinner's "Verbal Behavior" that critically challenged the Behaviorist theory of language acquisition?</p>
+                            <p class="font-semibold mb-4 resizable-quiz-question">1. Which theory views language learning as habit formation through imitation and reinforcement?</p>
                             <div class="space-y-3">
-                                <button class="quiz-option" data-correct="false">Stephen Krashen</button>
-                                <button class="quiz-option" data-correct="true">Noam Chomsky</button>
-                                <button class="quiz-option" data-correct="false">François Grosjean</button>
-                                <button class="quiz-option" data-correct="false">Lev Vygotsky</button>
+                                <button class="quiz-option" data-correct="true">Behaviorist Theory</button>
+                                <button class="quiz-option" data-correct="false">Mentalist Theory</button>
+                                <button class="quiz-option" data-correct="false">Interactionist Theory</button>
+                                <button class="quiz-option" data-correct="false">Usage-based Theory</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                        <!-- Question 1.2 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">2. Noam Chomsky is the key figure for which theory, emphasizing an innate Language Acquisition Device (LAD) and Universal Grammar (UG)?</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="false">Behaviorist Theory</button>
+                                <button class="quiz-option" data-correct="true">Mentalist Theory</button>
+                                <button class="quiz-option" data-correct="false">Sociocultural Theory</button>
+                                <button class="quiz-option" data-correct="false">Usage-based Theory</button>
                             </div>
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
                         </div>
 
-                        <!-- Question 1.2 -->
+                        <!-- Question 1.3 -->
                         <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">2. According to Krashen's Monitor Model, which hypothesis describes the subconscious 'picking up' of language?</p>
+                            <p class="font-semibold mb-4 resizable-quiz-question">3. According to Krashen's Monitor Model, which hypothesis describes the subconscious 'picking up' of language?</p>
                             <div class="space-y-3">
                                 <button class="quiz-option" data-correct="false">The Monitor Hypothesis</button>
                                 <button class="quiz-option" data-correct="false">The Input Hypothesis (i+1)</button>
@@ -671,9 +679,9 @@
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
                         </div>
                         
-                        <!-- Question 1.3 -->
+                        <!-- Question 1.4 -->
                         <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">3. Learning an L2 that replaces or weakens the L1 due to social pressure is known as:</p>
+                            <p class="font-semibold mb-4 resizable-quiz-question">4. Learning an L2 that replaces or weakens the L1 due to social pressure is known as:</p>
                             <div class="space-y-3">
                                 <button class="quiz-option" data-correct="false">Additive bilingualism</button>
                                 <button class="quiz-option" data-correct="true">Subtractive bilingualism</button>
@@ -683,14 +691,38 @@
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
                         </div>
                         
-                        <!-- Question 1.4 -->
+                        <!-- Question 1.5 -->
                         <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">4. Which figure is most associated with the concept of "Bilingual life and reality," viewing bilinguals as unique users, not two monolinguals?</p>
+                            <p class="font-semibold mb-4 resizable-quiz-question">5. Which figure is most associated with the concept of "Bilingual life and reality," viewing bilinguals as unique users, not two monolinguals?</p>
                             <div class="space-y-3">
                                 <button class="quiz-option" data-correct="false">Noam Chomsky</button>
                                 <button class="quiz-option" data-correct="false">B.F. Skinner</button>
                                 <button class="quiz-option" data-correct="true">François Grosjean</button>
                                 <button class="quiz-option" data-correct="false">Stephen Krashen</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                        <!-- Question 1.6 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">6. The theory that claims social interaction is crucial for language development is:</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="false">Mentalist Theory</button>
+                                <button class="quiz-option" data-correct="false">Behaviorist Theory</button>
+                                <button class="quiz-option" data-correct="true">Interactionist Theory</button>
+                                <button class="quiz-option" data-correct="false">Usage-based Theory</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                         <!-- Question 1.7 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">7. The theory that argues learning happens through exposure to authentic input and extracting patterns, rather than an innate UG, is:</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="true">Usage-based Theory</button>
+                                <button class="quiz-option" data-correct="false">Mentalist Theory</button>
+                                <button class="quiz-option" data-correct="false">Behaviorist Theory</button>
+                                <button class="quiz-option" data-correct="false">Interactionist Theory</button>
                             </div>
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
                         </div>
@@ -746,6 +778,42 @@
                             </div>
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
                         </div>
+                        
+                        <!-- Question 2.4 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">4. The idea that bilingualism can offer protection against age-related cognitive decline is known as:</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="true">Cognitive Reserve Theory</button>
+                                <button class="quiz-option" data-correct="false">Executive Control Theory</button>
+                                <button class="quiz-option" data-correct="false">Neural Plasticity</button>
+                                <button class="quiz-option" data-correct="false">Metalinguistic Awareness</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                        <!-- Question 2.5 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">5. Which researcher is known for work on bilingual word recognition and production?</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="false">Ellen Bialystok</button>
+                                <button class="quiz-option" data-correct="true">Judith Kroll</button>
+                                <button class="quiz-option" data-correct="false">Aneta Pavlenko</button>
+                                <button class="quiz-option" data-correct="false">John Carroll</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                        <!-- Question 2.6 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">6. Which researcher is known for work on "bilingual minds," focusing on emotion and cognition?</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="false">Judith Kroll</button>
+                                <button class="quiz-option" data-correct="false">Ellen Bialystok</button>
+                                <button class="quiz-option" data-correct="true">Aneta Pavlenko</button>
+                                <button class="quiz-option" data-correct="false">John Carroll</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
 
                         <button class="reset-quiz text-sm text-cyan-400 hover:text-cyan-300 font-medium">Reset Questions</button>
                     </div>
@@ -765,19 +833,31 @@
                         
                         <!-- Question 3.1 -->
                         <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">1. Vygotsky's concept for the distance between what a learner can do independently and what they can achieve with guidance is the:</p>
+                            <p class="font-semibold mb-4 resizable-quiz-question">1. Who is the foundational figure of Sociocultural Theory (SCT) and the ZPD?</p>
                             <div class="space-y-3">
-                                <button class="quiz-option" data-correct="true">Zone of Proximal Development (ZPD)</button>
-                                <button class="quiz-option" data-correct="false">Community of Practice (CoP)</button>
-                                <button class="quiz-option" data-correct="false">Investment Theory</button>
-                                <button class="quiz-option" data-correct="false">Scaffolding</button>
+                                <button class="quiz-option" data-correct="false">Bonny Norton</button>
+                                <button class="quiz-option" data-correct="true">Lev Vygotsky</button>
+                                <button class="quiz-option" data-correct="false">James Lantolf</button>
+                                <button class="quiz-option" data-correct="false">Jean Lave</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+
+                        <!-- Question 3.2 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">2. The support provided by a "More Knowledgeable Other" (MKO) within the ZPD is called:</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="false">Mediation</button>
+                                <button class="quiz-option" data-correct="false">Investment</button>
+                                <button class="quiz-option" data-correct="true">Scaffolding</button>
+                                <button class="quiz-option" data-correct="false">Social Identity</button>
                             </div>
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
                         </div>
                         
-                        <!-- Question 3.2 -->
+                        <!-- Question 3.3 -->
                         <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">2. Bonny Norton's theory that replaces 'motivation' with a concept linked to identity, power, and a 'return' on learning is:</p>
+                            <p class="font-semibold mb-4 resizable-quiz-question">3. Bonny Norton's theory that replaces 'motivation' with a concept linked to identity, power, and a 'return' on learning is:</p>
                             <div class="space-y-3">
                                 <button class="quiz-option" data-correct="true">Investment Theory</button>
                                 <button class="quiz-option" data-correct="false">Sociocultural Theory</button>
@@ -787,14 +867,26 @@
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
                         </div>
                         
-                        <!-- Question 3.3 -->
+                        <!-- Question 3.4 -->
                         <div class="quiz-question">
-                            <p class="font-semibold mb-4 resizable-quiz-question">3. "Legitimate Peripheral Participation" (LPP) is a key concept in which theory developed by Lave & Wenger?</p>
+                            <p class="font-semibold mb-4 resizable-quiz-question">4. "Legitimate Peripheral Participation" (LPP) is a key concept in which theory developed by Lave & Wenger?</p>
                             <div class="space-y-3">
                                 <button class="quiz-option" data-correct="false">Sociocultural Theory</button>
                                 <button class="quiz-option" data-correct="false">Investment Theory</button>
                                 <button class="quiz-option" data-correct="true">Communities of Practice</button>
                                 <button class="quiz-option" data-correct="false">Social Identity Theory</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                        <!-- Question 3.5 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">5. Which figure is key for applying Vygotsky's Sociocultural Theory specifically to the field of SLA?</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="false">Bonny Norton</button>
+                                <button class="quiz-option" data-correct="false">Lev Vygotsky</button>
+                                <button class="quiz-option" data-correct="true">James Lantolf</button>
+                                <button class="quiz-option" data-correct="false">Etienne Wenger</button>
                             </div>
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
                         </div>
@@ -862,6 +954,42 @@
                             </div>
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
                         </div>
+                        
+                        <!-- Question 4.5 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">5. Which figure is a pioneer in "language maintenance and shift" and language revitalization?</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="true">Joshua Fishman</button>
+                                <button class="quiz-option" data-correct="false">Pierre Bourdieu</button>
+                                <button class="quiz-option" data-correct="false">Jim Cummins</button>
+                                <button class="quiz-option" data-correct="false">Nancy Hornberger</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                        <!-- Question 4.6 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">6. A "Transitional" bilingual education model is considered a...?</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="false">"Strong" or Additive model</button>
+                                <button class="quiz-option" data-correct="true">"Weak" or Subtractive model</button>
+                                <button class="quiz-option" data-correct="false">Language revitalization model</button>
+                                <button class="quiz-option" data-correct="false">CLIL model</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                        <!-- Question 4.7 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">7. Which scholar, known for Language Policy and Planning, developed the "Continua of Biliteracy" framework?</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="false">Tove Skutnabb-Kangas</button>
+                                <button class="quiz-option" data-correct="false">Jim Cummins</button>
+                                <button class="quiz-option" data-correct="true">Nancy Hornberger</button>
+                                <button class="quiz-option" data-correct="false">Joshua Fishman</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
 
                         <button class="reset-quiz text-sm text-cyan-400 hover:text-cyan-300 font-medium">Reset Questions</button>
                     </div>
@@ -910,6 +1038,30 @@
                                 <button class="quiz-option" data-correct="false">John Carroll</button>
                                 <button class="quiz-option" data-correct="false">Robert Gardner</button>
                                 <button class="quiz-option" data-correct="true">Eric Lenneberg</button>
+                                <button class="quiz-option" data-correct="false">Zoltán Dörnyei</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                        <!-- Question 5.4 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">4. Self-Determination Theory is primarily concerned with:</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="false">Integrative vs. Instrumental motivation</button>
+                                <button class="quiz-option" data-correct="false">Language aptitude components</button>
+                                <button class="quiz-option" data-correct="true">Intrinsic vs. Extrinsic motivation</button>
+                                <button class="quiz-option" data-correct="false">The Ideal L2 Self</button>
+                            </div>
+                            <p class="feedback-message mt-3 text-sm font-medium"></p>
+                        </div>
+                        
+                        <!-- Question 5.5 -->
+                        <div class="quiz-question">
+                            <p class="font-semibold mb-4 resizable-quiz-question">5. The theory of "Multiple Intelligences" (e.g., linguistic, logical, spatial) was proposed by:</p>
+                            <div class="space-y-3">
+                                <button class="quiz-option" data-correct="true">Howard Gardner</button>
+                                <button class="quiz-option" data-correct="false">Robert Gardner</button>
+                                <button class="quiz-option" data-correct="false">John Carroll</button>
                                 <button class="quiz-option" data-correct="false">Zoltán Dörnyei</button>
                             </div>
                             <p class="feedback-message mt-3 text-sm font-medium"></p>
@@ -1017,7 +1169,7 @@
     <!-- Cummins Modal -->
     <div id="modal-cummins" class="modal fixed inset-0 z-40">
         <div class="modal-backdrop fixed inset-0 bg-black/70"></div>
-        <div class="modal-content fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 text-gray-200 rounded-lg shadow-xl p-8 z-50 max-w-2xl w-11/1JARRYD-AF-NP-T-3-AF-NP-J-T-3-T-NP-J-T-2-T-NP-J-T-1/2 max-h-[80vh] overflow-y-auto">
+        <div class="modal-content fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 text-gray-200 rounded-lg shadow-xl p-8 z-50 max-w-2xl w-11/12 max-h-[80vh] overflow-y-auto">
             <button class="modal-close absolute top-4 right-4 text-gray-400 hover:text-white text-3xl">&times;</button>
             <h2 class="text-2xl font-bold text-sky-300 mb-6">Cummins' BICS/CALP & CUP Hypotheses</h2>
             <div class="space-y-4 resizable-text">
@@ -1088,7 +1240,7 @@
     <!-- Dörnyei Modal -->
     <div id="modal-dornyei" class="modal fixed inset-0 z-40">
         <div class="modal-backdrop fixed inset-0 bg-black/70"></div>
-        <div class="modal-content fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 text-gray-200 rounded-lg shadow-xl p-8 z-50 max-w-2xl w-11/1D/G-AF-NP-T-3-AF-NP-J-T-3-T-NP-J-T-2-T-NP-J-T-1/2 max-h-[80vh] overflow-y-auto">
+        <div class="modal-content fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 text-gray-200 rounded-lg shadow-xl p-8 z-50 max-w-2xl w-11/1S/G-AF-NP-T-3-AF-NP-J-T-3-T-NP-J-T-2-T-NP-J-T-1/2 max-h-[80vh] overflow-y-auto">
             <button class="modal-close absolute top-4 right-4 text-gray-400 hover:text-white text-3xl">&times;</button>
             <h2 class="text-2xl font-bold text-cyan-300 mb-6">Dörnyei's L2 Motivational Self System</h2>
             <div class="space-y-4 resizable-text">
@@ -1366,4 +1518,5 @@
 
 </body>
 </html>
+
 
